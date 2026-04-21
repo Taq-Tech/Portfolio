@@ -1,59 +1,69 @@
-# Portfolio
+# TaqTech — Agency Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+Strategy-driven software agency website for TaqTech agency. Built with Angular 21 and Tailwind CSS v4.
 
-## Development server
+## Stack
 
-To start a local development server, run:
+- **Angular 21** (standalone components, signals)
+- **Tailwind CSS v4** (`@import "tailwindcss"`)
+- **TypeScript 5.9**
+- **Vitest** for tests
+- Fonts: Clash Display + General Sans (via Fontshare)
 
-```bash
-ng serve
-```
+## Sections
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navbar · Hero · About · Core Services · Projects · Testimonials · CTA Banner · Footer
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Getting started
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
+Dev server runs at `http://localhost:4200`.
 
-To build the project run:
+## Scripts
 
-```bash
-ng build
+| Command | Purpose |
+|---|---|
+| `npm start` | Dev server with HMR |
+| `npm run build` | Production build to `dist/` |
+| `npm run watch` | Dev build in watch mode |
+| `npm test` | Run Vitest |
+
+## Project structure
+
+```
+src/
+  app/
+    components/
+      navbar/  hero/  about/  services/
+      projects/  testimonials/  cta-banner/  footer/
+    app.ts        # root component, composes sections
+  styles.css      # global tokens + Tailwind entry
+  index.html
+public/           # static assets (served from /)
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Each section is a self-contained standalone component with its own `.ts` / `.html` / `.css`.
 
-## Running unit tests
+## Design system
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Dark theme (`#0a0a1a` background)
+- Gradient accent: `#9723ea → #1797ff` (purple → blue)
+- Glassmorphism on elevated surfaces (`rgba` + `backdrop-filter: blur`)
+- CSS custom properties in `src/styles.css`:
+  - `--accent-purple`, `--accent-blue`
+  - `--btn-border`, `--btn-grad-start`, `--btn-grad-end`
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+## Deployment
 
-For end-to-end (e2e) testing, run:
+Pushes to the default branch deploy automatically via Vercel. Static assets live in `public/` and are served from the site root (`/hero-bg.png`, etc.).
 
-```bash
-ng e2e
-```
+## License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+See [LICENSE](./LICENSE).
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
