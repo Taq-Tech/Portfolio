@@ -4,7 +4,8 @@
       "mcp__25552a50-d744-4e82-9cbc-309bb245fbc6__whoami",
       "mcp__25552a50-d744-4e82-9cbc-309bb245fbc6__get_design_context",
       "mcp__25552a50-d744-4e82-9cbc-309bb245fbc6__get_screenshot",
-      "Bash(ng generate *)"
+      "Bash(ng generate *)",
+      "mcp__25552a50-d744-4e82-9cbc-309bb245fbc6__get_metadata"
     ]
   }
 }

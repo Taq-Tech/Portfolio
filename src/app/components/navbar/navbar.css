@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.nav-link {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--font-muted);
+  text-decoration: none;
+  padding: 5px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link--active {
+  font-weight: 600;
+  background: linear-gradient(to left, var(--accent-purple), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.8px;
+}
+
+.contact-btn {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  padding: 0 28px;
+  height: 40px;
+  border-radius: 16px;
+  border: 1.5px solid var(--btn-border);
+  background: linear-gradient(109.14deg, var(--btn-grad-start) 0%, var(--btn-grad-end) 109.53%);
+  box-shadow:
+    0px 0px 50px 0px rgba(45, 91, 255, 0.25),
+    0px 0px 25px 0px rgba(123, 63, 242, 0.35),
+    0px 12px 30px 0px rgba(0, 0, 0, 0.4),
+    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
