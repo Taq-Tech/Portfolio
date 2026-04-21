@@ -2,6 +2,70 @@
   display: block;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar__cta--mobile {
+  display: none;
+}
+
+.navbar__burger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+}
+
+.navbar__burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.navbar__burger span.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar__burger span.open:nth-child(2) {
+  opacity: 0;
+}
+.navbar__burger span.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .nav-link {
   font-family: 'Clash Display', sans-serif;
   font-weight: 500;
@@ -51,4 +115,57 @@
 
 .contact-btn:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar__cta--desktop {
+    display: none;
+  }
+
+  .navbar__burger {
+    display: flex;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 24px 20px;
+    background: rgba(10, 0, 30, 0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar__links--open {
+    max-height: 400px;
+    opacity: 1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .navbar__links .nav-link {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .navbar__cta--mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+  }
 }

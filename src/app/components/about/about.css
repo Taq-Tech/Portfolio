@@ -218,3 +218,88 @@
   text-align: center;
   white-space: nowrap;
 }
+
+@media (max-width: 1024px) {
+  .about {
+    height: auto;
+    flex-direction: column;
+    gap: 48px;
+    padding: 80px 24px;
+  }
+
+  .about__deco--left,
+  .about__deco--right {
+    display: none;
+  }
+
+  .about__content {
+    width: 100%;
+    max-width: 560px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__heading,
+  .about__body {
+    text-align: center;
+  }
+
+  .about__list {
+    align-self: center;
+    text-align: left;
+  }
+
+  .btn--outline {
+    align-self: center;
+  }
+
+  .about__panel {
+    width: 100%;
+    max-width: 480px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__heading {
+    font-size: 20px;
+  }
+
+  .about__panel {
+    height: 420px;
+  }
+
+  .about__panel-center {
+    width: 220px;
+    height: 210px;
+  }
+
+  .stat-card {
+    width: 140px;
+    padding: 12px;
+  }
+
+  .stat-card__number {
+    font-size: 32px;
+  }
+
+  .stat-card__label {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .stat-card--top-left {
+    left: calc(50% - 110px);
+    top: calc(50% - 80px);
+  }
+
+  .stat-card--bottom-left {
+    left: calc(50% - 70px);
+    top: calc(50% + 100px);
+  }
+
+  .stat-card--top-right {
+    left: calc(50% + 110px);
+    top: calc(50% - 90px);
+  }
+}

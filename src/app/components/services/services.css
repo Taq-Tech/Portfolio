@@ -97,6 +97,53 @@
   background: rgba(84, 63, 242, 0.08);
 }
 
+@media (max-width: 900px) {
+  .services {
+    height: auto;
+    padding: 80px 24px;
+    gap: 40px;
+  }
+
+  .services__bg-img {
+    width: 520px;
+    height: 520px;
+    opacity: 0.12;
+  }
+
+  .services__cards {
+    flex-direction: column;
+    max-width: 420px;
+  }
+
+  .service-divider {
+    display: none;
+  }
+
+  .service-card {
+    padding: 32px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .service-card:first-child {
+    border-top: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-label__text {
+    font-size: 26px;
+  }
+
+  .services__subtitle {
+    font-size: 14px;
+  }
+
+  .services__bg-img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
 .service-card__title {
   font-family: 'Clash Display', sans-serif;
   font-weight: 500;

@@ -1,18 +1,17 @@
-<nav class="fixed top-0 left-0 w-full z-50 h-16 bg-white/5 backdrop-blur-sm flex items-center justify-between px-10">
+<nav class="navbar">
 
   <!-- Logo -->
-  <div class="flex items-center gap-[15px]">
+  <div class="navbar__logo">
     <img src="/zONhI.jpg" alt="TaqTech logo" class="w-10 h-10 rounded-sm object-cover shrink-0" />
     <span class="text-white text-2xl font-semibold tracking-wide leading-tight">TaqTech</span>
   </div>
 
   <!-- Nav Links -->
-  <div class="flex items-center gap-4">
+  <div class="navbar__links" [class.navbar__links--open]="menuOpen()">
     <a href="#" class="nav-link nav-link--active">Home</a>
     <a href="#" class="nav-link">About</a>
     <a href="#" class="nav-link">Our Portfolio</a>
 
-    <!-- Services with dropdown arrow -->
     <div class="flex items-center gap-0.5">
       <a href="#" class="nav-link">Services</a>
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,9 +20,17 @@
     </div>
 
     <a href="#" class="nav-link">Our Blog</a>
+    <button class="contact-btn navbar__cta--mobile">Contact Us</button>
   </div>
 
-  <!-- CTA Button -->
-  <button class="contact-btn">Contact Us</button>
+  <!-- Desktop CTA -->
+  <button class="contact-btn navbar__cta--desktop">Contact Us</button>
+
+  <!-- Hamburger -->
+  <button class="navbar__burger" (click)="toggleMenu()" aria-label="Toggle menu">
+    <span [class.open]="menuOpen()"></span>
+    <span [class.open]="menuOpen()"></span>
+    <span [class.open]="menuOpen()"></span>
+  </button>
 
 </nav>
