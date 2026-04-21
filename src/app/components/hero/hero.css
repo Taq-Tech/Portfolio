@@ -179,7 +179,6 @@
 @media (max-width: 560px) {
   .hero__headline {
     font-size: 32px;
-    text-shadow: 0 0 1px rgba(161, 0, 255, 0.4);
   }
 
   .hero__actions {

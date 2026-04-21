@@ -97,15 +97,6 @@
   background: rgba(84, 63, 242, 0.08);
 }
 
-.service-card > svg:last-child {
-  transform: rotate(180deg);
-  transition: transform 0.25s ease;
-}
-
-.service-card:hover > svg:last-child {
-  transform: rotate(180deg) translateY(-2px);
-}
-
 @media (max-width: 900px) {
   .services {
     height: auto;
