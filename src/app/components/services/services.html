@@ -1,94 +1,115 @@
 <section class="services">
 
-  <!-- Radial dot grid background -->
-  <div class="services__bg" aria-hidden="true"></div>
+  <!-- Background image -->
+  <img class="services__bg-img" src="/23db66d98336cb89f9b317e6d4de7d6947466263.png" alt="" aria-hidden="true" />
 
   <!-- Section header -->
   <div class="services__header">
     <div class="section-label">
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 3px #a100ff)">
-        <circle cx="24" cy="24" r="12" stroke="url(#sg)" stroke-width="2"/>
-        <path d="M17 24h14M24 17v14" stroke="url(#sg2)" stroke-width="2" stroke-linecap="round"/>
+      <!-- 4-squares section icon -->
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 3px #a100ff)">
+        <path d="M1.75 9.75C1.75 7.62827 2.59285 5.59344 4.09315 4.09315C5.59344 2.59285 7.62827 1.75 9.75 1.75C11.8717 1.75 13.9066 2.59285 15.4069 4.09315C16.9071 5.59344 17.75 7.62827 17.75 9.75C17.75 11.8717 16.9071 13.9066 15.4069 15.4069C13.9066 16.9071 11.8717 17.75 9.75 17.75C7.62827 17.75 5.59344 16.9071 4.09315 15.4069C2.59285 13.9066 1.75 11.8717 1.75 9.75Z" stroke="url(#sl1)" stroke-width="3.5"/>
+        <path opacity="0.5" d="M23.75 31.75C23.75 29.6283 24.5929 27.5934 26.0931 26.0931C27.5934 24.5929 29.6283 23.75 31.75 23.75C33.8717 23.75 35.9066 24.5929 37.4069 26.0931C38.9071 27.5934 39.75 29.6283 39.75 31.75C39.75 33.8717 38.9071 35.9066 37.4069 37.4069C35.9066 38.9071 33.8717 39.75 31.75 39.75C29.6283 39.75 27.5934 38.9071 26.0931 37.4069C24.5929 35.9066 23.75 33.8717 23.75 31.75Z" stroke="url(#sl2)" stroke-width="3.5"/>
+        <path d="M1.75 31.75C1.75 27.978 1.75 26.094 2.922 24.922C4.094 23.75 5.978 23.75 9.75 23.75C13.522 23.75 15.406 23.75 16.578 24.922C17.75 26.094 17.75 27.978 17.75 31.75C17.75 35.522 17.75 37.406 16.578 38.578C15.406 39.75 13.522 39.75 9.75 39.75C5.978 39.75 4.094 39.75 2.922 38.578C1.75 37.406 1.75 35.522 1.75 31.75Z" stroke="url(#sl3)" stroke-width="3.5"/>
+        <path opacity="0.5" d="M23.75 9.75C23.75 5.978 23.75 4.094 24.922 2.922C26.094 1.75 27.978 1.75 31.75 1.75C35.522 1.75 37.406 1.75 38.578 2.922C39.75 4.094 39.75 5.978 39.75 9.75C39.75 13.522 39.75 15.406 38.578 16.578C37.406 17.75 35.522 17.75 31.75 17.75C27.978 17.75 26.094 17.75 24.922 16.578C23.75 15.406 23.75 13.522 23.75 9.75Z" stroke="url(#sl4)" stroke-width="3.5"/>
         <defs>
-          <linearGradient id="sg" x1="12" y1="24" x2="36" y2="24" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-          </linearGradient>
-          <linearGradient id="sg2" x1="24" y1="12" x2="24" y2="36" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-          </linearGradient>
+          <linearGradient id="sl1" x1="17.75" y1="9.75" x2="1.75" y2="9.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="sl2" x1="39.75" y1="31.75" x2="23.75" y2="31.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="sl3" x1="17.75" y1="31.75" x2="1.75" y2="31.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="sl4" x1="39.75" y1="9.75" x2="23.75" y2="9.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
         </defs>
       </svg>
       <span class="section-label__text">Our Core Services</span>
     </div>
-    <p class="services__subtitle">
-      We've got the Right Hands — from Strategy to Deployment
-    </p>
+    <p class="services__subtitle">End-to-End Digital Solutions — From Strategy to Deployment</p>
   </div>
 
-  <!-- Service cards -->
+  <!-- Cards container -->
   <div class="services__cards">
 
+    <!-- Tech Consulting -->
     <div class="service-card">
-      <div class="service-card__icon">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="10" width="32" height="22" rx="3" stroke="url(#sc1)" stroke-width="2"/>
-          <path d="M14 32l-2 4h16l-2-4" stroke="url(#sc1)" stroke-width="2"/>
-          <path d="M4 26h32" stroke="url(#sc1)" stroke-width="2"/>
-          <defs>
-            <linearGradient id="sc1" x1="4" y1="20" x2="36" y2="20" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M53.296 23.72L39.7333 37.232L42.5573 40.0666L56.1227 26.56L53.296 23.72ZM29.8107 37.2293L26.624 34.056L23.8 36.8906L26.9867 40.064L29.8107 37.2293ZM26.624 24.2L40.1867 10.6933L37.3653 7.85862L23.8 21.3653L26.624 24.2ZM48.336 7.33329H49.656V3.33329H48.336V7.33329ZM56.6667 14.3066V15.6213H60.6667V14.3066H56.6667ZM49.656 7.33329C51.8373 7.33329 53.2693 7.33862 54.3333 7.47996C55.3413 7.61329 55.7093 7.83996 55.936 8.06662L58.7573 5.22929C57.664 4.14129 56.312 3.70929 54.864 3.51462C53.4747 3.32796 51.7227 3.33329 49.656 3.33329V7.33329ZM60.6667 14.3066C60.6667 12.248 60.672 10.504 60.4827 9.11729C60.288 7.67196 59.8533 6.31996 58.7573 5.22929L55.936 8.06396C56.16 8.28796 56.384 8.65062 56.52 9.65062C56.6613 10.7093 56.6667 12.136 56.6667 14.3066H60.6667ZM26.624 34.056C25.0827 32.5226 24.0693 31.5093 23.4213 30.6613C22.8053 29.8586 22.7067 29.4426 22.7067 29.128H18.7067C18.7067 30.6746 19.3573 31.936 20.2453 33.0933C21.0987 34.2053 22.3387 35.4346 23.8 36.8906L26.624 34.056ZM26.9867 40.064C28.448 41.52 29.6853 42.7573 30.8 43.6053C31.9627 44.488 33.2267 45.1333 34.7707 45.1333V41.1333C34.448 41.1333 34.0267 41.032 33.2213 40.4186C32.368 39.7733 31.3547 38.7653 29.8107 37.2293L26.9867 40.064ZM56.1227 26.56C57.96 24.7306 59.2933 23.4453 60 21.7546L56.3067 20.2186C55.9813 21.0026 55.3653 21.664 53.296 23.7253L56.1227 26.56ZM56.6667 15.624C56.6667 18.5386 56.632 19.4373 56.3067 20.2186L60 21.7546C60.7013 20.064 60.6667 18.2106 60.6667 15.624H56.6667ZM40.1867 10.6933C42.256 8.63196 42.9227 8.02129 43.712 7.69329L42.1867 3.99996C40.4907 4.69862 39.2027 6.02929 37.3653 7.85862L40.1867 10.6933ZM48.336 3.33329C45.736 3.33329 43.8827 3.29862 42.1867 3.99729L43.712 7.69329C44.5013 7.36796 45.4107 7.33329 48.336 7.33329V3.33329ZM39.7307 37.2293C38.544 38.4133 37.6587 39.2933 36.8987 39.9493C36.1387 40.6053 35.6453 40.904 35.2853 41.0373L36.664 44.792C37.7013 44.4106 38.624 43.7413 39.512 42.9786C40.4027 42.2053 41.4027 41.2106 42.552 40.064L39.7307 37.2293ZM35.2853 41.0373C35.1218 41.103 34.9469 41.1356 34.7707 41.1333V45.1333C35.4284 45.1315 36.0596 45.0177 36.664 44.792L35.2853 41.0373ZM23.8 21.3653C22.6773 22.4853 21.6987 23.4586 20.936 24.328C20.176 25.192 19.512 26.088 19.112 27.08L22.8213 28.5733C22.9707 28.2053 23.2853 27.7146 23.9413 26.9653C24.5947 26.2213 25.464 25.3546 26.624 24.2L23.8 21.3653ZM19.112 27.08C18.8433 27.7293 18.7055 28.4253 18.7067 29.128H22.7067C22.7067 28.9546 22.736 28.7813 22.8213 28.5733L19.112 27.08Z" fill="white"/>
+        <path opacity="0.5" d="M20.5573 27.4212L21.9707 26.0052V25.9999L20.5573 27.4212ZM14.7947 34.6666L10.2827 39.1733C9.73806 39.7147 9.0013 40.0187 8.23334 40.0187C7.46537 40.0187 6.72861 39.7147 6.184 39.1733C5.9147 38.9045 5.70105 38.5853 5.55527 38.2339C5.40949 37.8825 5.33446 37.5058 5.33446 37.1253C5.33446 36.7448 5.40949 36.3681 5.55527 36.0167C5.70105 35.6653 5.9147 35.346 6.184 35.0773L6.592 34.6666M29.536 49.52L25.024 54.0266C24.7551 54.2953 24.5418 54.6144 24.3962 54.9656C24.2507 55.3167 24.1758 55.6932 24.1758 56.0733C24.1758 56.4534 24.2507 56.8298 24.3962 57.181C24.5418 57.5322 24.7551 57.8513 25.024 58.12C25.5687 58.6622 26.3061 58.9667 27.0747 58.9667C27.8433 58.9667 28.5806 58.6622 29.1253 58.12L29.536 57.712M18.496 45.7573L13.936 50.216" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M46.104 21.368C45.632 21.8362 44.9941 22.0989 44.3293 22.0989C43.6645 22.0989 43.0267 21.8362 42.5547 21.368L39.7307 24.2026C40.9523 25.4175 42.6052 26.0993 44.328 26.0993C46.0508 26.0993 47.7037 25.4175 48.9253 24.2026L46.104 21.368ZM42.5547 17.856C43.0265 17.3886 43.6638 17.1264 44.328 17.1264C44.9922 17.1264 45.6295 17.3886 46.1013 17.856L48.928 15.0213C47.7062 13.8057 46.0528 13.1233 44.3293 13.1233C42.6058 13.1233 40.9524 13.8057 39.7307 15.0213L42.5547 17.856ZM46.1013 17.856C46.5156 18.2864 46.8301 18.9 46.8301 19.612C46.8301 20.324 46.5156 20.9376 46.104 21.368L48.9253 24.2026C49.5296 23.6006 50.0118 22.8852 50.339 22.0974C50.6662 21.3096 50.8346 20.465 50.8346 19.612C50.8346 18.759 50.6662 17.9143 50.339 17.1266C50.0118 16.3388 49.5323 15.6234 48.928 15.0213L46.1013 17.856ZM42.5547 21.368C42.1404 20.9376 41.8259 20.324 41.8259 19.612C41.8259 18.9 42.1404 18.2864 42.5547 17.856L39.7307 15.0213C39.1264 15.6234 38.6469 16.3388 38.3197 17.1266C37.9925 17.9143 37.8241 18.759 37.8241 19.612C37.8241 20.465 37.9925 21.3096 38.3197 22.0974C38.6469 22.8852 39.1264 23.6006 39.7307 24.2026L42.5547 21.368Z" fill="white"/>
+      </svg>
       <h3 class="service-card__title">Tech Consulting</h3>
+      <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.4167 8.75L10.0833 0.75L0.75 8.75" stroke="url(#arr1a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M19.4167 14.0833L10.0833 6.08325L0.75 14.0833" stroke="url(#arr1b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="arr1a" x1="19.4167" y1="4.75" x2="0.75" y2="4.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="arr1b" x1="19.4167" y1="10.0833" x2="0.75" y2="10.0833" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
     </div>
 
+    <!-- Divider -->
+    <svg width="2" height="302" viewBox="0 0 2 302" fill="none" xmlns="http://www.w3.org/2000/svg" class="service-divider">
+      <path d="M0.75 0.75L0.749987 300.75" stroke="white" stroke-opacity="0.1" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+
+    <!-- UX Design -->
     <div class="service-card">
-      <div class="service-card__icon">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="6" y="6" width="28" height="28" rx="4" stroke="url(#sc2)" stroke-width="2"/>
-          <circle cx="20" cy="20" r="6" stroke="url(#sc2)" stroke-width="2"/>
-          <path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="url(#sc2)" stroke-width="2" stroke-linecap="round"/>
-          <defs>
-            <linearGradient id="sc2" x1="6" y1="20" x2="34" y2="20" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <h3 class="service-card__title">UX Design</h3>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M35.344 51.7974C34.9688 51.4222 34.4599 51.2114 33.9293 51.2114C33.3987 51.2114 32.8899 51.4222 32.5147 51.7974C32.1395 52.1725 31.9287 52.6814 31.9287 53.212C31.9287 53.7426 32.1395 54.2515 32.5147 54.6267L35.344 51.7974ZM9.37334 31.488C9.55644 31.6845 9.77724 31.8421 10.0226 31.9514C10.2679 32.0608 10.5327 32.1195 10.8013 32.1243C11.0698 32.129 11.3366 32.0796 11.5856 31.979C11.8346 31.8784 12.0609 31.7287 12.2508 31.5388C12.4407 31.3489 12.5904 31.1227 12.691 30.8736C12.7916 30.6246 12.841 30.3578 12.8363 30.0893C12.8315 29.8208 12.7727 29.5559 12.6634 29.3106C12.5541 29.0653 12.3965 28.8445 12.2 28.6614L9.37334 31.488ZM30.072 10.7894L31.4853 12.2027C31.8599 11.8277 32.0702 11.3194 32.0702 10.7894C32.0702 10.2594 31.8599 9.75102 31.4853 9.37602L30.072 10.7894ZM53.2133 33.9307L54.6267 32.5174C54.2517 32.1428 53.7433 31.9324 53.2133 31.9324C52.6833 31.9324 52.175 32.1428 51.8 32.5174L53.2133 33.9307ZM22.2293 15.8027C21.8761 16.1818 21.6837 16.6833 21.6929 17.2014C21.702 17.7196 21.9119 18.2139 22.2783 18.5803C22.6448 18.9468 23.1391 19.1567 23.6573 19.1658C24.1754 19.175 24.6769 18.9826 25.056 18.6294L22.2293 15.8027ZM45.3707 38.9414C45.0062 39.3184 44.8043 39.8235 44.8087 40.3479C44.813 40.8723 45.0231 41.374 45.3937 41.745C45.7643 42.116 46.2659 42.3266 46.7903 42.3314C47.3147 42.3362 47.82 42.1348 48.1973 41.7707L45.3707 38.9414ZM13.2267 9.37336L9.37334 13.2294L12.2 16.0614L16.0587 12.2027L13.2267 9.37336ZM50.768 54.6267L54.624 50.7707L51.7973 47.9414L47.9387 51.7974L50.768 54.6267ZM32.5147 54.6267C34.2933 56.4054 35.7627 57.8827 37.0853 58.8934C38.456 59.9387 39.896 60.6667 41.64 60.6667V56.6667C41.1227 56.6667 40.5253 56.4854 39.512 55.712C38.4533 54.904 37.2 53.6587 35.344 51.7974L32.5147 54.6267ZM47.9387 51.7974C46.08 53.6534 44.8267 54.904 43.7653 55.712C42.752 56.4854 42.1547 56.6667 41.64 56.6667V60.6667C43.3813 60.6667 44.824 59.9387 46.192 58.8934C47.5173 57.8827 48.9893 56.4054 50.768 54.6267L47.9387 51.7974ZM9.37334 13.2294C7.59468 15.008 6.11734 16.48 5.10668 17.8027C4.06134 19.1707 3.33334 20.6134 3.33334 22.3547H7.33334C7.33334 21.84 7.51468 21.2427 8.28801 20.2294C9.09601 19.168 10.3413 17.9147 12.2027 16.056L9.37334 13.2294ZM12.2 28.6534C10.3467 26.8 9.09868 25.5467 8.29068 24.488C7.51734 23.4747 7.33601 22.8774 7.33601 22.36H3.33601C3.33601 24.104 4.06401 25.544 5.10934 26.9147C6.12001 28.2374 7.59468 29.7094 9.37334 31.488L12.2 28.6534ZM31.4853 9.37069C29.7067 7.59202 28.2347 6.11469 26.912 5.10402C25.5413 4.05869 24.1013 3.33069 22.3573 3.33069V7.33069C22.8747 7.33069 23.472 7.51202 24.4853 8.28536C25.544 9.09336 26.8 10.3387 28.656 12.2L31.4853 9.37069ZM16.0587 12.1974C17.9173 10.3414 19.1707 9.09336 20.232 8.28536C21.2453 7.51202 21.8427 7.33069 22.3573 7.33069V3.33069C20.616 3.33069 19.1733 4.05869 17.8053 5.10402C16.48 6.11469 15.008 7.59202 13.2293 9.37069L16.0587 12.1974ZM51.7973 35.3414C53.656 37.1974 54.904 38.4534 55.712 39.512C56.4853 40.5254 56.6667 41.1227 56.6667 41.64H60.6667C60.6667 39.896 59.9387 38.456 58.8933 37.0854C57.8827 35.7627 56.4053 34.2907 54.6267 32.512L51.7973 35.3414ZM54.6267 50.768C56.4053 48.9894 57.8827 47.5147 58.8933 46.192C59.9387 44.824 60.6667 43.3814 60.6667 41.64H56.6667C56.6667 42.1547 56.4853 42.752 55.712 43.7654C54.904 44.8267 53.6587 46.08 51.7973 47.9387L54.6267 50.768ZM28.6587 9.37336L22.2293 15.8027L25.056 18.6294L31.4853 12.2027L28.6587 9.37336ZM51.7973 32.5147L45.3707 38.9414L48.1973 41.7707L54.6267 35.344L51.7973 32.5147Z" fill="white"/>
+        <path d="M11.1947 57.808L13.3333 57.096L19.9467 54.8907C22.0107 54.2027 23.04 53.8587 24.0133 53.3974C25.1636 52.8498 26.24 52.184 27.2427 51.4C28.0907 50.7387 28.8613 49.968 30.4 48.4294L53.1227 25.7067L55.5947 23.2347C57.5612 21.2682 58.6659 18.6011 58.6659 15.82C58.6659 13.039 57.5612 10.3719 55.5947 8.40536C53.6282 6.43887 50.961 5.33411 48.18 5.33411C45.399 5.33411 42.7318 6.43887 40.7653 8.40536L38.2933 10.8774L15.5707 33.5974C14.032 35.1387 13.2613 35.9094 12.6 36.7574C11.8197 37.7586 11.15 38.8414 10.6027 39.9867C10.1413 40.9574 9.79734 41.992 9.10934 44.056L6.90401 50.6667L6.19201 52.8054M11.1947 57.808L9.05601 58.5227C8.55749 58.6899 8.02222 58.7147 7.51038 58.5943C6.99853 58.474 6.5304 58.2132 6.1586 57.8414C5.7868 57.4696 5.52607 57.0015 5.40573 56.4897C5.28538 55.9778 5.31018 55.4426 5.47734 54.944L6.19201 52.8054M11.1947 57.808L6.19201 52.8054" stroke="white" stroke-width="2.5"/>
+        <path opacity="0.5" d="M38.2933 10.8773C38.2933 10.8773 38.6027 16.1307 43.2373 20.7627C47.872 25.3973 53.12 25.7067 53.12 25.7067" stroke="white" stroke-width="1.5"/>
+      </svg>
+      <h3 class="service-card__title">UI/UX Design</h3>
+      <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.4167 8.75L10.0833 0.75L0.75 8.75" stroke="url(#arr2a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M19.4167 14.0833L10.0833 6.08325L0.75 14.0833" stroke="url(#arr2b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="arr2a" x1="19.4167" y1="4.75" x2="0.75" y2="4.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="arr2b" x1="19.4167" y1="10.0833" x2="0.75" y2="10.0833" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
     </div>
 
+    <!-- Divider -->
+    <svg width="2" height="302" viewBox="0 0 2 302" fill="none" xmlns="http://www.w3.org/2000/svg" class="service-divider">
+      <path d="M0.75 0.75L0.749987 300.75" stroke="white" stroke-opacity="0.1" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Web Development -->
     <div class="service-card">
-      <div class="service-card__icon">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 10l8 10-8 10" stroke="url(#sc3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18 30h16" stroke="url(#sc3)" stroke-width="2" stroke-linecap="round"/>
-          <defs>
-            <linearGradient id="sc3" x1="6" y1="20" x2="34" y2="20" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M32 58.6667C46.728 58.6667 58.6666 46.728 58.6666 32C58.6666 17.272 46.728 5.33337 32 5.33337C17.272 5.33337 5.33331 17.272 5.33331 32C5.33331 46.728 17.272 58.6667 32 58.6667Z" stroke="white" stroke-width="2.5"/>
+        <path d="M41.3333 24L41.792 24.4587C45.3466 28.0133 47.1253 29.792 47.1253 32C47.1253 34.208 45.3466 35.9867 41.792 39.5413L41.3333 40M35.4506 19.12L32 32L28.5493 44.88M22.6666 24L22.208 24.4587C18.6533 28.0133 16.8746 29.792 16.8746 32C16.8746 34.208 18.6533 35.9867 22.208 39.5413L22.6666 40" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
       <h3 class="service-card__title">Web Development</h3>
+      <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.4167 8.75L10.0833 0.75L0.75 8.75" stroke="url(#arr3a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M19.4167 14.0833L10.0833 6.08325L0.75 14.0833" stroke="url(#arr3b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="arr3a" x1="19.4167" y1="4.75" x2="0.75" y2="4.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="arr3b" x1="19.4167" y1="10.0833" x2="0.75" y2="10.0833" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
     </div>
 
+    <!-- Divider -->
+    <svg width="2" height="302" viewBox="0 0 2 302" fill="none" xmlns="http://www.w3.org/2000/svg" class="service-divider">
+      <path d="M0.75 0.75L0.749987 300.75" stroke="white" stroke-opacity="0.1" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Mobile Apps -->
     <div class="service-card">
-      <div class="service-card__icon">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="12" y="4" width="16" height="32" rx="3" stroke="url(#sc4)" stroke-width="2"/>
-          <circle cx="20" cy="31" r="1.5" fill="url(#sc4)"/>
-          <path d="M16 8h8" stroke="url(#sc4)" stroke-width="2" stroke-linecap="round"/>
-          <defs>
-            <linearGradient id="sc4" x1="12" y1="20" x2="28" y2="20" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1797ff"/><stop offset="1" stop-color="#9723ea"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+      <svg width="48" height="58" viewBox="0 0 48 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.333 24C5.333 15.048 5.333 10.572 8.115 7.79C10.897 5.008 15.376 5.006 24.333 5.006C33.29 5.006 37.767 5.006 40.548 7.79C43.33 10.573 43.333 15.048 43.333 24V34C43.333 42.952 43.333 47.428 40.548 50.21C37.766 52.992 33.29 52.994 24.333 52.994C15.376 52.994 10.9 52.994 8.115 50.21C5.33 47.428 5.333 42.952 5.333 34V24Z" stroke="white" stroke-width="2.5"/>
+        <path opacity="0.5" d="M32 45H16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
       <h3 class="service-card__title">Mobile Apps</h3>
+      <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.4167 8.75L10.0833 0.75L0.75 8.75" stroke="url(#arr4a)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M19.4167 14.0833L10.0833 6.08325L0.75 14.0833" stroke="url(#arr4b)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="arr4a" x1="19.4167" y1="4.75" x2="0.75" y2="4.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="arr4b" x1="19.4167" y1="10.0833" x2="0.75" y2="10.0833" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
     </div>
 
   </div>
