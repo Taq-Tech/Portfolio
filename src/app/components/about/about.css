@@ -260,46 +260,36 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .about__heading {
     font-size: 20px;
   }
 
   .about__panel {
-    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
   }
 
   .about__panel-center {
-    width: 220px;
-    height: 210px;
+    position: static;
+    transform: none;
+    width: 200px;
+    height: 190px;
+    left: auto;
+    top: auto;
   }
 
   .stat-card {
-    width: 140px;
-    padding: 12px;
-  }
-
-  .stat-card__number {
-    font-size: 32px;
-  }
-
-  .stat-card__label {
-    font-size: 13px;
-    white-space: normal;
-  }
-
-  .stat-card--top-left {
-    left: calc(50% - 110px);
-    top: calc(50% - 80px);
-  }
-
-  .stat-card--bottom-left {
-    left: calc(50% - 70px);
-    top: calc(50% + 100px);
-  }
-
-  .stat-card--top-right {
-    left: calc(50% + 110px);
-    top: calc(50% - 90px);
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 280px;
+    left: auto;
+    top: auto;
   }
 }
