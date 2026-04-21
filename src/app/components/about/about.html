@@ -2,10 +2,10 @@
 
   <!-- Background decorations -->
   <div class="about__deco about__deco--left" aria-hidden="true">
-    <img src="https://www.figma.com/api/mcp/asset/32c0615e-5d65-4f70-951d-d1eafbe6020b" alt="" />
+    <img src="/about-deco.png" alt="" />
   </div>
   <div class="about__deco about__deco--right" aria-hidden="true">
-    <img src="https://www.figma.com/api/mcp/asset/32c0615e-5d65-4f70-951d-d1eafbe6020b" alt="" />
+    <img src="/about-deco.png" alt="" />
   </div>
 
   <!-- Left: content -->
@@ -13,7 +13,25 @@
 
     <!-- Section label -->
     <div class="section-label">
-      <img src="https://www.figma.com/api/mcp/asset/804613ee-427c-4173-9c0a-d79d8b5afa53" alt="" class="section-label__icon" />
+      <svg class="section-label__icon" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g filter="url(#crown_shadow)">
+          <path d="M43.4677 27.374L43.9277 22.502C44.2877 18.678 44.4677 16.764 43.8117 15.974C43.6462 15.7687 43.4417 15.5981 43.21 15.4722C42.9783 15.3462 42.724 15.2673 42.4617 15.24C41.5097 15.156 40.3157 16.516 37.9257 19.236C36.6897 20.644 36.0717 21.346 35.3837 21.456C34.9994 21.5163 34.6059 21.4533 34.2597 21.276C33.6217 20.956 33.1997 20.086 32.3497 18.348L27.8757 9.18C26.2717 5.894 25.4697 4.25 24.2497 4.25C23.0297 4.25 22.2277 5.894 20.6237 9.18L16.1497 18.348C15.3017 20.088 14.8777 20.956 14.2397 21.276C13.8931 21.452 13.5 21.5149 13.1157 21.456C12.4277 21.346 11.8097 20.644 10.5737 19.236C8.1837 16.516 6.9897 15.156 6.0377 15.24C5.7754 15.2673 5.52109 15.3462 5.2894 15.4722C5.05771 15.5981 4.85322 15.7687 4.6877 15.974C4.0337 16.764 4.2137 18.678 4.5737 22.502L5.0317 27.374C5.7877 35.398 6.1637 39.412 8.5317 41.83C10.8937 44.25 14.4377 44.25 21.5297 44.25H26.9677C34.0577 44.25 37.6017 44.25 39.9677 41.83C42.3337 39.41 42.7117 35.398 43.4677 27.374Z" stroke="url(#crown_g1)" stroke-width="2.5"/>
+          <path opacity="0.5" d="M18.2497 36.25H30.2497" stroke="url(#crown_g2)" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <defs>
+          <filter id="crown_shadow" x="-2.75" y="-2.75" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="1.5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.633333 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          <linearGradient id="crown_g1" x1="44.25" y1="24.25" x2="4.25" y2="24.25" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="crown_g2" x1="30.25" y1="36.75" x2="18.25" y2="36.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
       <span class="section-label__text">About TaqTech</span>
     </div>
 
@@ -39,13 +57,13 @@
 
     <!-- Center brand image -->
     <img class="about__panel-center"
-      src="https://www.figma.com/api/mcp/asset/5f7490a2-c1cb-44b3-b227-5cbf7f111db3"
+      src="/brand-center.png"
       alt="TaqTech brand" />
 
     <!-- Stat card: 4+ Years -->
     <div class="stat-card stat-card--top-left">
       <div class="stat-card__row">
-        <img src="https://www.figma.com/api/mcp/asset/818aa71d-ee8e-4556-a06a-2446918c6fce" alt="" class="stat-card__icon" />
+        <img src="/stat-years.png" alt="" class="stat-card__icon" />
         <span class="stat-card__number">4+</span>
       </div>
       <p class="stat-card__label">Years of Experience</p>
@@ -54,7 +72,7 @@
     <!-- Stat card: 18+ Projects -->
     <div class="stat-card stat-card--bottom-left">
       <div class="stat-card__row">
-        <img src="https://www.figma.com/api/mcp/asset/98b0260d-ce0c-4661-bf67-0c2538f0dd1b" alt="" class="stat-card__icon" />
+        <img src="/stat-projects.png" alt="" class="stat-card__icon" />
         <span class="stat-card__number">18+</span>
       </div>
       <p class="stat-card__label">Projects Successfully Delivered</p>
@@ -63,7 +81,7 @@
     <!-- Stat card: 95% Satisfaction -->
     <div class="stat-card stat-card--top-right">
       <div class="stat-card__row">
-        <img src="https://www.figma.com/api/mcp/asset/2e48f5c5-9060-4837-8fd9-bdbb13415b63" alt="" class="stat-card__icon" />
+        <img src="/stat-satisfaction.png" alt="" class="stat-card__icon" />
         <span class="stat-card__number">95%</span>
       </div>
       <p class="stat-card__label">Client Satisfaction Rate</p>
