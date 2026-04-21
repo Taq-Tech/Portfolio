@@ -283,6 +283,27 @@
 .t-dot:hover { opacity: 0.8; }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .testimonials {
+    height: auto;
+    padding: 60px 40px;
+    gap: 32px;
+  }
+
+  .testimonials__carousel {
+    max-width: 640px;
+  }
+
+  .t-card__left,
+  .t-card__right {
+    padding: 40px 24px;
+  }
+
+  .section-label__text {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .testimonials {
     height: auto;
@@ -318,5 +339,13 @@
 
   .section-label__text {
     font-size: 24px;
+  }
+
+  .testimonials__ghosts {
+    display: none;
+  }
+
+  .t-card__stars {
+    align-self: flex-start;
   }
 }
