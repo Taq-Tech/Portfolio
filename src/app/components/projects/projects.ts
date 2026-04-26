@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [ScrollAnimateDirective],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })

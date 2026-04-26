@@ -1,5 +1,6 @@
 import { Component, signal, computed } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
 interface Testimonial {
   name: string;
@@ -12,7 +13,7 @@ interface Testimonial {
 
 @Component({
   selector: 'app-testimonials',
-  imports: [NgClass],
+  imports: [NgClass, ScrollAnimateDirective],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.css',
 })
