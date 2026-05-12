@@ -361,52 +361,50 @@
   gap: 60px;
 }
 
-/* Vertical dashed centre line */
-.timeline__line {
+/* Curved S-line */
+.timeline__curve {
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 0;
-  border-left: 2px dashed rgba(150, 100, 255, 0.3);
+  width: 120px;
+  height: 100%;
   transform: translateX(-50%);
   pointer-events: none;
+  z-index: 1;
 }
 
-/* Dot on the centre line */
+/* Dot on the curve – absolutely centered */
 .timeline__dot {
-  flex-shrink: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: #fff;
   border: 3px solid rgba(150, 100, 255, 0.5);
   box-shadow: 0 0 12px rgba(150, 100, 255, 0.5);
-  position: relative;
   z-index: 2;
 }
 
 /* ── Each process step ── */
 .process-step {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 0 32px;
+  gap: 0 80px;
 }
-
-/* Flipped step: image | dot | text */
-.process-step--flipped { direction: rtl; }
-.process-step--flipped > * { direction: ltr; }
 
 /* Text side */
 .process-step__text {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-.process-step__text--right {
-  text-align: right;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
 }
 
 .process-step__num {
@@ -422,7 +420,7 @@
 .process-step__title {
   font-family: 'Clash Display', sans-serif;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 28px;
   background: linear-gradient(to right, #4CB8FF, #9B2FFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -461,8 +459,6 @@
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: 16px;
-  border: 1px solid rgba(100, 80, 200, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* ─────────────────────────────────────────
@@ -501,7 +497,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: #b8c1ec;
-  max-width: 600px;
+  white-space: nowrap;
 }
 
 /* 3 × 2 grid */
@@ -751,7 +747,7 @@
   .wmu__heading { font-size: 32px; }
 
   .our-process { padding: 60px 24px 80px; }
-  .process-step { grid-template-columns: 1fr 30px 1fr; gap: 0 16px; }
+  .process-step { gap: 0 40px; }
   .process-step__num { font-size: 90px; }
 
   .expertise { padding: 60px 24px 80px; }
@@ -774,16 +770,13 @@
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }
   .numbers__globe { width: 400px; height: 400px; }
 
-  .process-step,
-  .process-step--flipped {
+  .process-step {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    direction: ltr;
   }
-  .timeline__line { display: none; }
-  .timeline__dot { margin: 0 auto; }
-  .process-step__text--right { text-align: left; align-items: flex-start; }
+  .timeline__curve { display: none; }
+  .timeline__dot { display: none; }
   .process-step__num { font-size: 80px; }
 
   .stat-card { width: 136px; padding: 12px; }

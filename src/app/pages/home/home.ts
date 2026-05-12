@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from '../../components/hero/hero';
+import { AboutPreview } from '../../components/about-preview/about-preview';
 import { Services } from '../../components/services/services';
 import { Projects } from '../../components/projects/projects';
 import { Testimonials } from '../../components/testimonials/testimonials';
@@ -7,9 +8,10 @@ import { CtaBanner } from '../../components/cta-banner/cta-banner';
 
 @Component({
   selector: 'app-home',
-  imports: [Hero, Services, Projects, Testimonials, CtaBanner],
+  imports: [Hero, AboutPreview, Services, Projects, Testimonials, CtaBanner],
   template: `
     <app-hero />
+    <app-about-preview />
     <app-services />
     <app-projects />
     <app-testimonials />
