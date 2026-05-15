@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadComponent: () => import('./components/about/about').then(m => m.About),
   },
   {
+    path: 'portfolio',
+    loadComponent: () => import('./pages/portfolio/portfolio').then(m => m.PortfolioPage),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

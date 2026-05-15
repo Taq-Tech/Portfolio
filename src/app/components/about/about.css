@@ -33,9 +33,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 160px 40px 120px;
+  padding: 160px 40px 140px;
   overflow: hidden;
-  background-color: #0a0a1f;
+  background: linear-gradient(
+    180deg,
+    #0a0a1f 0%,
+    #0a0a1a 65%,
+    #0a0a1a 100%
+  );
+}
+
+/* Smooth fade into Who We Are */
+.about-hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 180px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(10, 10, 26, 0.65) 50%,
+    #0a0a1a 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* World-map background image */
@@ -51,10 +74,13 @@
   background-repeat: no-repeat;
   opacity: 0.22;
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
 }
 
 .about-hero__inner {
   position: relative;
+  z-index: 2;
   text-align: center;
   max-width: 700px;
 }
@@ -92,8 +118,23 @@
   align-items: center;
   justify-content: space-between;
   gap: 48px;
-  padding: 80px 40px;
+  padding: 48px 40px 80px;
   overflow: hidden;
+  background: #0a0a1a;
+  margin-top: -1px;
+}
+
+/* Blend with hero above */
+.who-we-are::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, #0a0a1a 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Deco blobs (reuse the asset) */
@@ -113,6 +154,7 @@
   width: 490px;
   flex-shrink: 0;
   position: relative;
+  z-index: 1;
 }
 
 .wwa__body {
@@ -126,6 +168,7 @@
 /* Right panel */
 .wwa__panel {
   position: relative;
+  z-index: 1;
   width: 500px;
   height: 500px;
   flex-shrink: 0;
@@ -624,28 +667,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 40px;
+  padding: 80px 40px 120px;
   overflow: hidden;
   gap: 48px;
+  background: linear-gradient(
+    180deg,
+    #0a0a1a 0%,
+    #0a0a1a 55%,
+    #080616 82%,
+    #05011a 100%
+  );
 }
 
-/* Globe glow in the background */
+/* Smooth fade into footer */
+.numbers::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 160px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(5, 1, 26, 0.55) 45%,
+    #05011a 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Globe / network background (left) */
 .numbers__globe {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
+  left: 0;
+  top: -6%;
+  width: min(70%, 880px);
+  height: 115%;
   pointer-events: none;
 }
 .numbers__globe-inner {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background: radial-gradient(ellipse at 35% 45%, rgba(36, 100, 220, 0.3) 0%, rgba(84, 63, 242, 0.15) 40%, transparent 70%);
-  /* Simulate globe outline */
-  box-shadow: inset 0 0 80px rgba(40, 80, 200, 0.15);
+  background-image: url('/NUMBERS%20THAT%20MATTER.png');
+  background-size: 112% auto;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 /* Dotted overlay on sides */
@@ -654,9 +721,22 @@
   inset: 0;
   background-image: radial-gradient(rgba(84, 63, 242, 0.18) 1.5px, transparent 1.5px);
   background-size: 28px 28px;
-  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 30%, transparent 70%, black 100%);
-  mask-image: linear-gradient(to right, black 0%, transparent 30%, transparent 70%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 75%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 75%, black 100%);
   pointer-events: none;
+}
+
+/* Centered content (title + stats) */
+.numbers__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 /* Header */
@@ -667,6 +747,7 @@
   align-items: center;
   gap: 14px;
   text-align: center;
+  width: 100%;
 }
 
 .num-label {
@@ -682,27 +763,31 @@
   max-width: 580px;
 }
 
-/* 4-column stat row */
+/* 4-column stat row — centered on page */
 .numbers__grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 20px;
-  width: 100%;
-  max-width: 960px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 /* Individual stat card */
 .num-card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
   padding: 24px 20px;
   border-radius: 18px;
   background: rgba(20, 10, 50, 0.7);
   border: 1px solid rgba(100, 80, 200, 0.2);
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .num-card:hover {
@@ -712,7 +797,9 @@
 
 .num-card__top {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -753,12 +840,16 @@
   .expertise { padding: 60px 24px 80px; }
   .expertise__grid { grid-template-columns: 1fr 1fr; gap: 16px; }
 
-  .numbers { padding: 60px 24px; }
-  .numbers__grid { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+  .numbers { padding: 60px 24px 100px; }
+  .numbers__grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    width: 100%;
+    max-width: 560px;
+  }
 }
 
 @media (max-width: 700px) {
-  .about-hero { padding: 100px 24px 60px; }
+  .about-hero { padding: 100px 24px 100px; }
   .about-hero__heading { font-size: 30px; }
   .about-hero__sub { font-size: 15px; }
 
@@ -768,7 +859,16 @@
   .exp-card__content { width: 65%; }
 
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }
-  .numbers__globe { width: 400px; height: 400px; }
+  .numbers__globe {
+    left: 0;
+    top: -4%;
+    width: min(82%, 480px);
+    height: 98%;
+  }
+  .numbers__globe-inner {
+    background-size: 114% auto;
+    background-position: left center;
+  }
 
   .process-step {
     display: flex;
