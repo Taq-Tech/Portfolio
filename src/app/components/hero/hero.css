@@ -63,7 +63,7 @@
 }
 
 .hero__gradient-text {
-  background: linear-gradient(to left, #9723ea, #1797ff);
+  background: linear-gradient(to right, #4CB8FF, #9B2FFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -87,8 +87,8 @@
 
 .btn {
   flex: 1;
-  height: 40px;
-  border-radius: 16px;
+  height: 48px;
+  border-radius: 50px;
   font-family: 'Clash Display', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -96,25 +96,26 @@
   color: #fff;
   cursor: pointer;
   white-space: nowrap;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  opacity: 0.88;
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .btn--primary {
-  border: 1.5px solid var(--btn-border);
-  background: linear-gradient(109.14deg, var(--btn-grad-start) 0%, var(--btn-grad-end) 109.53%);
+  border: 1.5px solid rgba(100, 120, 255, 0.6);
+  background: linear-gradient(100deg, #1D5AF0 0%, #8E2DF5 100%);
   box-shadow:
-    0px 0px 50px 0px rgba(45, 91, 255, 0.25),
-    0px 0px 25px 0px rgba(123, 63, 242, 0.35),
+    0px 0px 60px 0px rgba(30, 90, 255, 0.35),
+    0px 0px 30px 0px rgba(142, 45, 245, 0.4),
     0px 12px 30px 0px rgba(0, 0, 0, 0.4),
-    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.2);
+    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.18);
 }
 
 .btn--outline {
-  border: 2px solid rgba(123, 63, 242, 0.8);
+  border: 2px solid rgba(140, 80, 255, 0.85);
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(6px);
 }

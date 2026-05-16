@@ -1,0 +1,166 @@
+:host {
+  display: block;
+}
+
+.portfolio-work {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 64px 32px 56px;
+  overflow: hidden;
+  background-color: #050115;
+}
+
+.portfolio-work__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/testimonials-bg.png');
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+.portfolio-work__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 1, 21, 0.82) 0%,
+    rgba(5, 1, 21, 0.68) 42%,
+    rgba(5, 1, 21, 0.8) 100%
+  );
+  pointer-events: none;
+}
+
+.portfolio-work__schematic {
+  display: none;
+}
+
+.portfolio-work__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 3.2vw, 38px);
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.01em;
+  background: linear-gradient(to right, #4cb8ff, #9b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.portfolio-work__carousel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 996px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.portfolio-work__viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-work__track {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.portfolio-work__slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pw-card {
+  margin: 0;
+  line-height: 0;
+  background: transparent;
+}
+
+.pw-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 218 / 392;
+  object-fit: contain;
+  object-position: center;
+}
+
+.portfolio-work__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.pw-arrow {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.pw-arrow:hover {
+  opacity: 0.75;
+}
+
+.pw-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pw-dot {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.pw-dot:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-work__slide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-work {
+    padding: 48px 16px 40px;
+    gap: 28px;
+  }
+
+  .portfolio-work__slide {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+}
