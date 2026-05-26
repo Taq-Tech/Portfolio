@@ -211,59 +211,6 @@
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .navbar__cta--desktop {
-    display: none;
-  }
-
-  .navbar__burger {
-    display: flex;
-  }
-
-  .navbar__links {
-    position: absolute;
-    top: 64px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 4px;
-    padding: 24px 20px;
-    background: rgba(10, 0, 30, 0.95);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .navbar__links--open {
-    max-height: 400px;
-    opacity: 1;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .navbar__links .nav-link {
-    font-size: 18px;
-    padding: 12px 0;
-  }
-
-  .navbar__cta--mobile {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
-  }
-}
-
 @media (max-width: 1023px) {
   .navbar {
     padding: 0 24px;
