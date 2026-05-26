@@ -641,6 +641,21 @@
   font-weight: 500;
 }
 
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+.tech-icon--aws {
+  width: 28px;
+  height: 18px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 /* Small icon badge */
 .ti {
   display: inline-flex;

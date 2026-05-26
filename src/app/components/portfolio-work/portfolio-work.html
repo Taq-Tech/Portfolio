@@ -1,6 +1,6 @@
 <section
   class="portfolio-work"
-  [class.portfolio-work--consulting]="variant() === 'consulting'"
+  [class.portfolio-work--mobile]="variant() === 'mobile'"
 >
 
   <div class="portfolio-work__bg" aria-hidden="true"></div>
@@ -19,21 +19,62 @@
       >
         @for (slide of slides(); track $index) {
           <div class="portfolio-work__slide" [attr.aria-hidden]="active() !== $index">
-            @for (card of slide; track card.id) {
-              <article class="pw-card">
-                <img
-                  class="pw-card__img"
-                  [src]="card.image"
-                  [alt]="card.title + ' project'"
-                  loading="lazy"
-                />
-              </article>
+            @for (card of slide; track card.id; let i = $index) {
+              <a
+                [routerLink]="card.route"
+                [class]="'pw-card pw-card--' + card.theme + ' pw-card--tilt-' + card.tilt"
+                [style.--pw-index]="i"
+              >
+                <span class="pw-card__orb pw-card__orb--1" aria-hidden="true"></span>
+                <span class="pw-card__orb pw-card__orb--2" aria-hidden="true"></span>
+
+                <div class="pw-card__visual">
+                  @if (card.logo) {
+                    <img
+                      class="pw-card__logo"
+                      [src]="card.logo"
+                      [alt]="card.title + ' logo'"
+                      loading="lazy"
+                    />
+                  } @else {
+                    <div class="pw-card__icon" aria-hidden="true">
+                      <svg width="72" height="72" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 8L8 20C4.686 23.314 4.686 28.686 8 32L16 40C19.314 43.314 24.686 43.314 28 40L40 28C43.314 24.686 43.314 19.314 40 16L32 8C28.686 4.686 23.314 4.686 20 8Z" stroke="url(#pwPillGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 14L34 34" stroke="url(#pwPillGrad)" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                          <linearGradient id="pwPillGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4CB8FF"/>
+                            <stop offset="1" stop-color="#9B2FFF"/>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  }
+                </div>
+
+                <div class="pw-card__body">
+                  <span class="pw-card__index" aria-hidden="true">0{{ i + 1 }}</span>
+                  <h3 class="pw-card__title">{{ card.title }}</h3>
+                  <div class="pw-card__tags">
+                    @for (tag of card.tags; track tag) {
+                      <span class="pw-card__tag">{{ tag }}</span>
+                    }
+                  </div>
+                  <span class="pw-card__cta">
+                    View Project
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M5 3L9 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
             }
           </div>
         }
       </div>
     </div>
 
+    @if (slideCount() > 1) {
     <div class="portfolio-work__controls">
       <button type="button" class="pw-arrow" (click)="prev()" aria-label="Previous slide">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -84,6 +125,7 @@
         </svg>
       </button>
     </div>
+    }
   </div>
 
 </section>

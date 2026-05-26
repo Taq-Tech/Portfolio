@@ -9,6 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Navbar {
   menuOpen = signal(false);
+  servicesOpen = signal(false);
   scrolled = signal(false);
 
   @HostListener('window:scroll')
@@ -18,5 +19,13 @@ export class Navbar {
 
   toggleMenu() {
     this.menuOpen.update(v => !v);
+  }
+
+  toggleServices() {
+    this.servicesOpen.update(v => !v);
+  }
+
+  closeServices() {
+    this.servicesOpen.set(false);
   }
 }

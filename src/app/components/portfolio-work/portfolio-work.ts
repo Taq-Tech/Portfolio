@@ -1,44 +1,79 @@
 import { Component, input, signal, computed } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
-export type PortfolioWorkVariant = 'web' | 'consulting';
+export type PortfolioWorkVariant = 'web' | 'mobile';
 
 export interface PortfolioWorkCard {
   id: string;
   title: string;
-  image: string;
+  route: string;
+  logo?: string;
+  tags: string[];
+  theme: string;
+  tilt: 'left' | 'right';
 }
+
+const WEB_CARDS: PortfolioWorkCard[] = [
+  {
+    id: 'qreate',
+    title: 'Qreate',
+    route: '/services/web-development/qreate',
+    logo: '/Web%20Development/Qreate/Qreate_white.jpg',
+    tags: ['Web App', 'Events'],
+    theme: 'qreate',
+    tilt: 'left',
+  },
+  {
+    id: 'promptoverflow',
+    title: 'PromptOverflow',
+    route: '/services/web-development/promptoverflow',
+    logo: '/Web%20Development/PromptOverflow/PromptOverflow.png',
+    tags: ['Web App', 'Community'],
+    theme: 'promptoverflow',
+    tilt: 'right',
+  },
+];
+
+const MOBILE_CARDS: PortfolioWorkCard[] = [
+  {
+    id: 'alpha-academy',
+    title: 'Alpha Academy',
+    route: '/services/mobile-app/alpha-academy',
+    logo: '/Mobile%20Development/Alpha_Academy/Alpha_Academy_Logo.jpeg',
+    tags: ['Mobile App', 'Education'],
+    theme: 'alpha',
+    tilt: 'left',
+  },
+  {
+    id: 'pillpal',
+    title: 'Pillpal',
+    route: '/services/mobile-app/pillpal',
+    tags: ['Mobile App', 'Health'],
+    theme: 'pillpal',
+    tilt: 'right',
+  },
+];
 
 @Component({
   selector: 'app-portfolio-work',
-  imports: [ScrollAnimateDirective],
+  imports: [RouterLink, ScrollAnimateDirective],
   templateUrl: './portfolio-work.html',
   styleUrl: './portfolio-work.css',
 })
 export class PortfolioWork {
   variant = input<PortfolioWorkVariant>('web');
   title = input('Our Work In Web Development');
-  slideCount = input(5);
 
   active = signal(0);
 
-  private readonly cards: PortfolioWorkCard[] = [
-    { id: 'bmw', title: "BMW's", image: '/portfolio-card-bmw.png' },
-    { id: 'netflix-1', title: 'Netflix', image: '/portfolio-card-netflix.png' },
-    { id: 'netflix-2', title: 'Netflix', image: '/portfolio-card-netflix.png' },
-    { id: 'minecraft', title: 'Mine Craft', image: '/portfolio-card-minecraft.png' },
-  ];
+  cards = computed(() => (this.variant() === 'web' ? WEB_CARDS : MOBILE_CARDS));
+
+  slides = computed(() => [this.cards()]);
+
+  slideCount = computed(() => this.slides().length);
 
   dotIndices = computed(() => Array.from({ length: this.slideCount() }, (_, i) => i));
-
-  slides = computed(() =>
-    Array.from({ length: this.slideCount() }, (_, slideIndex) =>
-      this.cards.map((card, cardIndex) => ({
-        ...card,
-        id: `${card.id}-s${slideIndex}-${cardIndex}`,
-      }))
-    )
-  );
 
   trackTransform = computed(() => `translateX(-${this.active() * 100}%)`);
 

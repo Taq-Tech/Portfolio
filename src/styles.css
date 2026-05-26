@@ -2,11 +2,32 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0a0a1a;
   color: #fff;
   font-family: 'Clash Display', sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .sa { transition: none !important; }
+  *, *::before, *::after { animation: none !important; }
+}
+
+/* ── Reusable ambient animations ── */
+@keyframes ambient-float {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(0deg); }
+  50%      { transform: translate(-50%, -50%) translateY(-14px) rotate(1.5deg); }
+}
+
+@keyframes ambient-pulse {
+  0%, 100% { filter: drop-shadow(0 0 18px rgba(155, 47, 255, 0.25)); }
+  50%      { filter: drop-shadow(0 0 28px rgba(76, 184, 255, 0.45)); }
 }
 
 :root {

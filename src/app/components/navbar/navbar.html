@@ -2,7 +2,7 @@
 
   <!-- Logo -->
   <div class="navbar__logo">
-    <img src="/zONhI.jpg" alt="TaqTech logo" class="w-10 h-10 rounded-sm object-cover shrink-0" />
+    <img src="/Logo.png" alt="TaqTech logo" class="w-10 h-10 rounded-sm object-cover shrink-0" />
     <span class="text-white text-2xl font-semibold tracking-wide leading-tight">TaqTech</span>
   </div>
 
@@ -12,11 +12,20 @@
     <a routerLink="/about" routerLinkActive="nav-link--active" class="nav-link">About</a>
     <a routerLink="/portfolio" routerLinkActive="nav-link--active" class="nav-link">Our Portfolio</a>
 
-    <div class="flex items-center gap-0.5">
-      <a href="#" class="nav-link">Services</a>
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 4.5L6 7.5L9 4.5" stroke="#b8c1ec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <div class="nav-dropdown" [class.nav-dropdown--open]="servicesOpen()">
+      <button type="button" class="nav-dropdown__trigger" (click)="toggleServices()" aria-haspopup="true" [attr.aria-expanded]="servicesOpen()">
+        <span class="nav-link">Services</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-dropdown__chevron">
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="#b8c1ec" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="nav-dropdown__menu" role="menu">
+        <a href="#" class="nav-dropdown__item" role="menuitem" (click)="closeServices()">Tech Consulting</a>
+        <a href="#" class="nav-dropdown__item" role="menuitem" (click)="closeServices()">UIUX Design</a>
+        <a routerLink="/services/web-development" routerLinkActive="nav-dropdown__item--active" class="nav-dropdown__item" role="menuitem" (click)="closeServices()">Web Development</a>
+        <a routerLink="/services/mobile-app" routerLinkActive="nav-dropdown__item--active" class="nav-dropdown__item" role="menuitem" (click)="closeServices()">Mobile Apps</a>
+      </div>
     </div>
 
     <a href="#" class="nav-link">Our Blog</a>

@@ -1,0 +1,137 @@
+<div class="qr-page">
+
+  <!-- ── Hero ── -->
+  <section class="qr-hero">
+    <img class="qr-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="qr-hero__inner">
+
+      <a routerLink="/services/web-development" class="qr-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="qr-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div class="qr-hero__logo">
+          <img src="/Web%20Development/Qreate/Qreate_white.jpg" alt="Qreate logo" />
+        </div>
+        <div>
+          <span class="qr-hero__domain">Event Management & Marketing Automation</span>
+          <h1 class="qr-hero__title">
+            <span class="qr-gradient-text">Qreate</span>
+          </h1>
+          <p class="qr-hero__tagline">Event Invitation Management Platform</p>
+        </div>
+      </div>
+
+      <p class="qr-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        A web application for managing events and automating the delivery of personalized digital invitations to attendees at scale. Supports bulk messaging across multiple channels with real-time delivery tracking, attendee check-in, and a modern dashboard for monitoring sending progress.
+      </p>
+
+      <ul class="qr-tech" scrollAnimate="fade-up" [animDelay]="260">
+        <li class="qr-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="" aria-hidden="true" />
+          <span>Django</span>
+        </li>
+        <li class="qr-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" aria-hidden="true" />
+          <span>Angular</span>
+        </li>
+        <li class="qr-tech__item">
+          <img src="https://cdn.simpleicons.org/celery/37814A" alt="" aria-hidden="true" />
+          <span>Celery</span>
+        </li>
+        <li class="qr-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" aria-hidden="true" />
+          <span>Redis</span>
+        </li>
+        <li class="qr-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="" aria-hidden="true" />
+          <span>Node.js</span>
+        </li>
+      </ul>
+
+      <div class="qr-hero__actions" scrollAnimate="fade-up" [animDelay]="340">
+        <a href="#" class="qr-btn qr-btn--primary" target="_blank" rel="noopener">
+          Visit Project
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a routerLink="/services/web-development" class="qr-btn qr-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="qr-shots">
+    <div class="qr-shots__inner">
+
+      <h2 class="qr-shots__title" scrollAnimate="fade-up">
+        <span class="qr-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="qr-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens from the platform — from the operator dashboard to attendee check-in.
+      </p>
+
+      <div class="qr-shots__grid">
+        <figure class="qr-shot qr-shot--wide" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/Qreate/Home.png', 'Home dashboard')">
+          <img src="/Web%20Development/Qreate/Home.png" alt="Home dashboard" />
+          <figcaption>Dashboard overview</figcaption>
+        </figure>
+
+        <figure class="qr-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/Qreate/Events.png', 'Events screen')">
+          <img src="/Web%20Development/Qreate/Events.png" alt="Events screen" />
+          <figcaption>Events management</figcaption>
+        </figure>
+
+        <figure class="qr-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/Qreate/Attendees.png', 'Attendees screen')">
+          <img src="/Web%20Development/Qreate/Attendees.png" alt="Attendees screen" />
+          <figcaption>Attendees & check-in</figcaption>
+        </figure>
+
+        <figure class="qr-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/Qreate/Sending_Jobs.png', 'Sending jobs screen')">
+          <img src="/Web%20Development/Qreate/Sending_Jobs.png" alt="Sending jobs screen" />
+          <figcaption>Bulk sending jobs</figcaption>
+        </figure>
+
+        <figure class="qr-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Web%20Development/Qreate/Whatsapp_Sessions.png', 'WhatsApp sessions')">
+          <img src="/Web%20Development/Qreate/Whatsapp_Sessions.png" alt="WhatsApp sessions" />
+          <figcaption>WhatsApp channel sessions</figcaption>
+        </figure>
+
+        <figure class="qr-shot qr-shot--narrow" scrollAnimate="fade-up" [animDelay]="400"
+                (click)="openLightbox('/Web%20Development/Qreate/QR.png', 'QR check-in')">
+          <img src="/Web%20Development/Qreate/QR.png" alt="QR check-in" />
+          <figcaption>QR-based check-in</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="qr-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="qr-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="qr-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

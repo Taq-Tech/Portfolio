@@ -38,63 +38,73 @@
   <!-- Cards -->
   <div class="projects__grid">
 
-    <!-- BMW -->
-    <article class="project-card project-card--bmw" scrollAnimate="fade-up" [animDelay]="100">
-      <div class="project-card__media" aria-hidden="true"></div>
+    <!-- Qreate -->
+    <a routerLink="/services/web-development/qreate" class="project-card project-card--qreate" scrollAnimate="fade-up" [animDelay]="100">
+      <img class="project-card__img" src="/Web%20Development/Qreate/Qreate.png" alt="Qreate project" />
       <div class="project-card__overlay">
         <header class="project-card__head">
-          <div class="project-card__brand-icon" aria-hidden="true"></div>
-          <h3 class="project-card__title">BMW's</h3>
+          <h3 class="project-card__name">Qreate</h3>
         </header>
         <div class="project-card__tags">
-          <span class="tag">Tech Consulting</span>
-          <span class="tag">Website</span>
+          <span class="project-card__tag">Website</span>
         </div>
       </div>
-    </article>
+    </a>
 
-    <!-- Netflix -->
-    <article class="project-card project-card--netflix" scrollAnimate="fade-up" [animDelay]="200">
-      <div class="project-card__media" aria-hidden="true"></div>
-      <div class="project-card__content">
-        <header class="project-card__head">
-          <div class="project-card__brand-icon project-card__brand-icon--netflix" aria-hidden="true"></div>
-          <h3 class="project-card__title project-card__title--gradient">Netflix</h3>
-        </header>
-        <div class="project-card__tags">
-          <span class="tag tag--solid">Website</span>
-        </div>
-        <p class="project-card__body">
-          The Design of Netflix mobile app from point zero to app lunch and maintenance. We used Flutter, Figma, and so many things I don't know about or under stand because we never really did this wor..
-        </p>
-        <div class="project-card__mockups" aria-hidden="true"></div>
-        <a href="#" class="project-card__link">
-          View Project
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 3L9 7L5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-    </article>
-
-    <!-- Minecraft -->
-    <article class="project-card project-card--minecraft" scrollAnimate="fade-up" [animDelay]="300">
-      <div class="project-card__media" aria-hidden="true"></div>
+    <!-- PromptOverflow -->
+    <a routerLink="/services/web-development/promptoverflow" class="project-card project-card--promptoverflow" scrollAnimate="fade-up" [animDelay]="200">
+      <img class="project-card__img" src="/Web%20Development/PromptOverflow/PromptOverflow.png" alt="PromptOverflow project" />
       <div class="project-card__overlay">
         <header class="project-card__head">
-          <div class="project-card__brand-icon" aria-hidden="true"></div>
-          <h3 class="project-card__title">Mine Craft</h3>
+          <h3 class="project-card__name">PromptOverflow</h3>
         </header>
         <div class="project-card__tags">
-          <span class="tag">Mobile App</span>
-          <span class="tag">Website</span>
-          <span class="tag">Game</span>
+          <span class="project-card__tag">Website</span>
         </div>
       </div>
-    </article>
+    </a>
+
+    <!-- Alpha Academy -->
+    <a routerLink="/services/mobile-app/alpha-academy" class="project-card project-card--alpha" scrollAnimate="fade-up" [animDelay]="300">
+      <img class="project-card__img" src="/Mobile%20Development/Alpha_Academy/Alpha_Academy_Logo.jpeg" alt="Alpha Academy logo" />
+      <div class="project-card__overlay">
+        <header class="project-card__head">
+          <h3 class="project-card__name">Alpha Academy</h3>
+        </header>
+        <div class="project-card__tags">
+          <span class="project-card__tag">Mobile App</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Pillpal -->
+    <a routerLink="/services/mobile-app/pillpal" class="project-card project-card--pillpal" scrollAnimate="fade-up" [animDelay]="400">
+      <div class="project-card__placeholder" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8L8 20C4.686 23.314 4.686 28.686 8 32L16 40C19.314 43.314 24.686 43.314 28 40L40 28C43.314 24.686 43.314 19.314 40 16L32 8C28.686 4.686 23.314 4.686 20 8Z" stroke="url(#projPillGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 14L34 34" stroke="url(#projPillGrad)" stroke-width="3" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="projPillGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4CB8FF"/>
+              <stop offset="1" stop-color="#9B2FFF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="project-card__overlay">
+        <header class="project-card__head">
+          <h3 class="project-card__name">Pillpal</h3>
+        </header>
+        <div class="project-card__tags">
+          <span class="project-card__tag">Mobile App</span>
+        </div>
+      </div>
+    </a>
 
   </div>
 
   <!-- See case studies -->
-  <a href="#" class="projects__cta">
+  <a routerLink="/portfolio" class="projects__cta">
     See Case Studies
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </a>

@@ -172,7 +172,7 @@
 .footer__contact a:hover { opacity: 0.7; }
 
 .footer__nowrap {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 /* Divider */
@@ -267,7 +267,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .footer {
     padding: 40px 20px 0;
   }
@@ -282,5 +282,26 @@
     height: auto;
     font-size: clamp(56px, 17vw, 156px);
     line-height: 0.9;
+  }
+}
+
+@media (max-width: 374px) {
+  .footer {
+    padding: 36px 14px 0;
+  }
+
+  .footer__copy {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 6px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__grid,
+  .footer__divider,
+  .footer__copy,
+  .footer__watermark {
+    max-width: 1200px;
   }
 }

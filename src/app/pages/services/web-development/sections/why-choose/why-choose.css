@@ -1,0 +1,169 @@
+:host {
+  display: block;
+}
+
+.wd-why {
+  position: relative;
+  width: 100%;
+  padding: 80px 24px 120px;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(to bottom, #050115 0%, #07021c 50%, #050115 100%);
+}
+
+.wd-why::before,
+.wd-why::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wd-why::before {
+  top: 0;
+  background: linear-gradient(to bottom, #050115 0%, transparent 100%);
+}
+
+.wd-why::after {
+  bottom: 0;
+  background: linear-gradient(to top, #050115 0%, transparent 100%);
+}
+
+.wd-why__bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  max-width: 720px;
+  max-height: 90%;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+  filter: brightness(1.2);
+  animation: ambient-float 14s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+}
+
+.wd-why__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.wd-why__title {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.wd-why__gradient-text {
+  background: linear-gradient(90deg, #4CB8FF 0%, #9B2FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(155, 47, 255, 0.25));
+  animation: ambient-pulse 6s ease-in-out infinite;
+}
+
+.wd-why__card svg {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.wd-why__card:hover svg {
+  transform: scale(1.12) rotate(-3deg);
+}
+
+.wd-why__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.wd-why__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 28px 22px;
+  min-height: 0;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(20, 14, 46, 0.85) 0%, rgba(14, 10, 36, 0.85) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wd-why__card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(96, 180, 253, 0.35);
+  box-shadow:
+    0 22px 50px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(96, 180, 253, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.wd-why__card-text {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 1023px) {
+  .wd-why {
+    padding: 60px 20px 90px;
+  }
+
+  .wd-why__title {
+    font-size: 26px;
+  }
+
+  .wd-why__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wd-why__title {
+    font-size: 22px;
+  }
+
+  .wd-why__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .wd-why__card {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 374px) {
+  .wd-why {
+    padding: 52px 14px 72px;
+  }
+
+  .wd-why__title {
+    font-size: 20px;
+  }
+}
