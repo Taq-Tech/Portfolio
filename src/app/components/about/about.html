@@ -1,92 +1,643 @@
-<section class="about">
+<!-- ══════════════════════════════════════════
+     SECTION 1 · About Hero
+════════════════════════════════════════════ -->
+<section class="about-hero">
+  <div class="about-hero__bg" aria-hidden="true"></div>
+  <div class="about-hero__inner" scrollAnimate="fade-in">
+    <h1 class="about-hero__heading">
+      Building Technology<br>
+      with<br>
+      Strategy and Precision
+    </h1>
+    <p class="about-hero__sub">
+      At TaqTech, we combine strategic thinking with technical expertise to
+      design and build scalable digital solutions that drive real business impact.
+    </p>
+  </div>
+</section>
 
-  <!-- Background decorations -->
-  <div class="about__deco about__deco--left" aria-hidden="true">
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 · Who We Are
+════════════════════════════════════════════ -->
+<section class="who-we-are">
+
+  <div class="who-we-are__deco who-we-are__deco--left" aria-hidden="true">
     <img src="/about-deco.png" alt="" />
   </div>
-  <div class="about__deco about__deco--right" aria-hidden="true">
+  <div class="who-we-are__deco who-we-are__deco--right" aria-hidden="true">
     <img src="/about-deco.png" alt="" />
   </div>
 
   <!-- Left: content -->
-  <div class="about__content">
+  <div class="wwa__content" scrollAnimate="fade-right">
 
-    <!-- Section label -->
     <div class="section-label">
-      <svg class="section-label__icon" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g filter="url(#crown_shadow)">
-          <path d="M43.4677 27.374L43.9277 22.502C44.2877 18.678 44.4677 16.764 43.8117 15.974C43.6462 15.7687 43.4417 15.5981 43.21 15.4722C42.9783 15.3462 42.724 15.2673 42.4617 15.24C41.5097 15.156 40.3157 16.516 37.9257 19.236C36.6897 20.644 36.0717 21.346 35.3837 21.456C34.9994 21.5163 34.6059 21.4533 34.2597 21.276C33.6217 20.956 33.1997 20.086 32.3497 18.348L27.8757 9.18C26.2717 5.894 25.4697 4.25 24.2497 4.25C23.0297 4.25 22.2277 5.894 20.6237 9.18L16.1497 18.348C15.3017 20.088 14.8777 20.956 14.2397 21.276C13.8931 21.452 13.5 21.5149 13.1157 21.456C12.4277 21.346 11.8097 20.644 10.5737 19.236C8.1837 16.516 6.9897 15.156 6.0377 15.24C5.7754 15.2673 5.52109 15.3462 5.2894 15.4722C5.05771 15.5981 4.85322 15.7687 4.6877 15.974C4.0337 16.764 4.2137 18.678 4.5737 22.502L5.0317 27.374C5.7877 35.398 6.1637 39.412 8.5317 41.83C10.8937 44.25 14.4377 44.25 21.5297 44.25H26.9677C34.0577 44.25 37.6017 44.25 39.9677 41.83C42.3337 39.41 42.7117 35.398 43.4677 27.374Z" stroke="url(#crown_g1)" stroke-width="2.5"/>
-          <path opacity="0.5" d="M18.2497 36.25H30.2497" stroke="url(#crown_g2)" stroke-width="2.5" stroke-linecap="round"/>
-        </g>
+      <!-- Crown icon -->
+      <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 3px #a100ff)">
+        <path d="M43.4677 27.374L43.9277 22.502C44.2877 18.678 44.4677 16.764 43.8117 15.974C43.6462 15.7687 43.4417 15.5981 43.21 15.4722C42.9783 15.3462 42.724 15.2673 42.4617 15.24C41.5097 15.156 40.3157 16.516 37.9257 19.236C36.6897 20.644 36.0717 21.346 35.3837 21.456C34.9994 21.5163 34.6059 21.4533 34.2597 21.276C33.6217 20.956 33.1997 20.086 32.3497 18.348L27.8757 9.18C26.2717 5.894 25.4697 4.25 24.2497 4.25C23.0297 4.25 22.2277 5.894 20.6237 9.18L16.1497 18.348C15.3017 20.088 14.8777 20.956 14.2397 21.276C13.8931 21.452 13.5 21.5149 13.1157 21.456C12.4277 21.346 11.8097 20.644 10.5737 19.236C8.1837 16.516 6.9897 15.156 6.0377 15.24C5.7754 15.2673 5.52109 15.3462 5.2894 15.4722C5.05771 15.5981 4.85322 15.7687 4.6877 15.974C4.0337 16.764 4.2137 18.678 4.5737 22.502L5.0317 27.374C5.7877 35.398 6.1637 39.412 8.5317 41.83C10.8937 44.25 14.4377 44.25 21.5297 44.25H26.9677C34.0577 44.25 37.6017 44.25 39.9677 41.83C42.3337 39.41 42.7117 35.398 43.4677 27.374Z" stroke="url(#wwa_g1)" stroke-width="2.5"/>
+        <path opacity="0.5" d="M18.2497 36.25H30.2497" stroke="url(#wwa_g2)" stroke-width="2.5" stroke-linecap="round"/>
         <defs>
-          <filter id="crown_shadow" x="-2.75" y="-2.75" width="54" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset/>
-            <feGaussianBlur stdDeviation="1.5"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0.633333 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-          </filter>
-          <linearGradient id="crown_g1" x1="44.25" y1="24.25" x2="4.25" y2="24.25" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
-          <linearGradient id="crown_g2" x1="30.25" y1="36.75" x2="18.25" y2="36.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="wwa_g1" x1="44.25" y1="24.25" x2="4.25" y2="24.25" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="wwa_g2" x1="30.25" y1="36.75" x2="18.25" y2="36.75" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
         </defs>
       </svg>
-      <span class="section-label__text">About TaqTech</span>
+      <span class="section-label__text">Who We Are</span>
     </div>
 
-    <h2 class="about__heading">
-      We Don't Just Build Software — We Build Scalable Digital Systems
-    </h2>
-
-    <p class="about__body">
-      TaqTech is a strategy-driven software agency based in the Middle East, specializing in building high-performance digital products for startups, SMEs, and enterprises.
+    <p class="wwa__body">
+      TaqTech is a strategy-driven technology agency focused on building
+      scalable digital products for startups, SMEs, and enterprises.
     </p>
-
-    <ul class="about__list">
-      <li>Strategy-first product development</li>
-      <li>Scalable and future-ready architecture</li>
-      <li>End-to-end delivery from idea to deployment</li>
-    </ul>
-
-    <button class="btn btn--outline">More About TaqTech!</button>
+    <p class="wwa__body">
+      We specialize in transforming ideas into high-performance systems by
+      combining business strategy, modern technologies, and user-centered design.
+    </p>
+    <p class="wwa__body">
+      Our mission is simple:<br>
+      To build digital solutions that are not only functional — but impactful,
+      scalable, and built for long-term success.
+    </p>
   </div>
 
   <!-- Right: stats panel -->
-  <div class="about__panel">
+  <div class="wwa__panel" scrollAnimate="fade-left" [animDelay]="150">
 
-    <!-- Center brand image -->
-    <img class="about__panel-center"
-      src="/brand-center.png"
-      alt="TaqTech brand" />
+    <img class="wwa__panel-center" src="/brand-center.png" alt="TaqTech brand" />
 
-    <!-- Stat card: 4+ Years -->
+    <!-- 4+ Years -->
     <div class="stat-card stat-card--top-left">
       <div class="stat-card__row">
-        <img src="/stat-years.png" alt="" class="stat-card__icon" />
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M18.5766 11.705C19.21 10.5667 19.5266 10 20 10C20.4733 10 20.79 10.5667 21.4233 11.705L21.5866 11.9983C21.7666 12.3217 21.8566 12.4817 21.9966 12.5883C22.1383 12.695 22.3133 12.735 22.6633 12.8133L22.98 12.8867C24.21 13.165 24.825 13.3033 24.9716 13.7733C25.1183 14.2433 24.6983 14.735 23.86 15.715L23.6433 15.9683C23.405 16.2467 23.285 16.385 23.2316 16.5583C23.1783 16.7317 23.1966 16.9167 23.2316 17.2883L23.265 17.6267C23.3916 18.935 23.455 19.59 23.0733 19.88C22.69 20.17 22.1133 19.905 20.9616 19.375L20.665 19.2383C20.3366 19.0883 20.1733 19.0133 20 19.0133C19.8266 19.0133 19.6633 19.0883 19.335 19.2383L19.0383 19.375C17.8866 19.9067 17.31 20.17 16.9266 19.88C16.5433 19.59 16.6083 18.935 16.735 17.6267L16.7683 17.2883C16.8033 16.9167 16.8216 16.7317 16.7683 16.5583C16.715 16.385 16.595 16.2467 16.3566 15.9683L16.14 15.715C15.3016 14.735 14.8816 14.245 15.0283 13.7733C15.175 13.3033 15.79 13.165 17.02 12.8867L17.3366 12.8133C17.6866 12.735 17.8616 12.6967 18.0033 12.5883C18.1433 12.4817 18.2333 12.3217 18.4133 11.9983L18.5766 11.705Z" stroke="url(#sy_g1)" stroke-width="2.5"/>
+          <path d="M31.6666 15C31.6666 16.5321 31.3649 18.0492 30.7786 19.4647C30.1923 20.8801 29.3329 22.1663 28.2496 23.2496C27.1662 24.333 25.8801 25.1923 24.4646 25.7786C23.0492 26.3649 21.5321 26.6667 20 26.6667C18.4679 26.6667 16.9508 26.3649 15.5353 25.7786C14.1199 25.1923 12.8338 24.333 11.7504 23.2496C10.6671 22.1663 9.80769 20.8801 9.22138 19.4647C8.63508 18.0492 8.33331 16.5321 8.33331 15C8.33331 11.9058 9.56248 8.93839 11.7504 6.75046C13.9383 4.56254 16.9058 3.33337 20 3.33337C23.0942 3.33337 26.0616 4.56254 28.2496 6.75046C30.4375 8.93839 31.6666 11.9058 31.6666 15Z" stroke="url(#sy_g2)" stroke-width="2.5"/>
+          <path opacity="0.5" d="M12.2517 25L11.19 28.8717C10.1433 32.6917 9.62001 34.6017 10.3183 35.6467C10.5633 36.0133 10.8917 36.3067 11.2733 36.5017C12.36 37.055 14.04 36.18 17.3983 34.43C18.515 33.8467 19.075 33.5567 19.6683 33.4933C19.8889 33.4713 20.1111 33.4713 20.3317 33.4933C20.925 33.5567 21.4833 33.8483 22.6017 34.43C25.96 36.18 27.64 37.055 28.7267 36.5017C29.1083 36.3067 29.4367 36.0133 29.6817 35.6467C30.3817 34.6017 29.8567 32.6917 28.81 28.8717L27.7483 25" stroke="url(#sy_g3)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="sy_g1" x1="25" y1="15" x2="15" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="sy_g2" x1="31.67" y1="15" x2="8.33" y2="15" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="sy_g3" x1="30" y1="30.83" x2="10" y2="30.83" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          </defs>
+        </svg>
         <span class="stat-card__number">4+</span>
       </div>
       <p class="stat-card__label">Years of Experience</p>
     </div>
 
-    <!-- Stat card: 18+ Projects -->
+    <!-- 22+ Projects -->
     <div class="stat-card stat-card--bottom-left">
       <div class="stat-card__row">
-        <img src="/stat-projects.png" alt="" class="stat-card__icon" />
-        <span class="stat-card__number">18+</span>
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.33331 23.3333C3.33331 17.0483 3.33331 13.905 5.28665 11.9533C7.23998 10.0017 10.3816 10 16.6666 10H23.3333C29.6183 10 32.7616 10 34.7133 11.9533C36.665 13.9067 36.6666 17.0483 36.6666 23.3333C36.6666 29.6183 36.6666 32.7617 34.7133 34.7133C32.76 36.665 29.6183 36.6667 23.3333 36.6667H16.6666C10.3816 36.6667 7.23831 36.6667 5.28665 34.7133C3.33498 32.76 3.33331 29.6183 3.33331 23.3333Z" stroke="url(#sp_g1)" stroke-width="2.5"/>
+          <path opacity="0.5" d="M36.1033 14.5333C31.0867 17.7933 28.5783 19.4233 25.935 20.245C22.07 21.4458 17.9316 21.4458 14.0667 20.245C11.4217 19.4233 8.91333 17.795 3.89667 14.5333" stroke="url(#sp_g2)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M13.3333 18.3333V21.6666M26.6666 18.3333V21.6666" stroke="url(#sp_g3)" stroke-width="2.5" stroke-linecap="round"/>
+          <path opacity="0.5" d="M15.2833 6.66664C15.6277 5.69075 16.2662 4.8457 17.111 4.24796C17.9558 3.65022 18.9651 3.32922 20 3.32922C21.0348 3.32922 22.0442 3.65022 22.889 4.24796C23.7338 4.8457 24.3723 5.69075 24.7167 6.66664" stroke="url(#sp_g4)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="sp_g1" x1="36.67" y1="23.33" x2="3.33" y2="23.33" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="sp_g2" x1="36.10" y1="17.84" x2="3.90" y2="17.84" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="sp_g3" x1="26.67" y1="20" x2="13.33" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="sp_g4" x1="24.72" y1="5" x2="15.28" y2="5" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          </defs>
+        </svg>
+        <span class="stat-card__number">22+</span>
       </div>
-      <p class="stat-card__label">Projects Successfully Delivered</p>
+      <p class="stat-card__label">Projects Successfully<br>Delivered</p>
     </div>
 
-    <!-- Stat card: 95% Satisfaction -->
+    <!-- 95% Satisfaction -->
     <div class="stat-card stat-card--top-right">
       <div class="stat-card__row">
-        <img src="/stat-satisfaction.png" alt="" class="stat-card__icon" />
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.7266 20.0949L32.5499 26.8949L35.0149 27.3216L36.1899 20.5216L33.7266 20.0949ZM22.0749 35.4166H14.3266V37.9166H22.0749V35.4166ZM12.8083 34.0216L11.4549 18.3666L8.96327 18.5816L10.3183 34.2366L12.8083 34.0216ZM32.5499 26.8949C31.7049 31.7783 27.3016 35.4166 22.0749 35.4166V37.9166C28.4516 37.9166 33.9516 33.4683 35.0149 27.3216L32.5499 26.8949ZM22.0916 8.49994L20.9866 15.2416L23.4533 15.6449L24.5583 8.90494L22.0916 8.49994ZM11.9799 17.0766L14.3783 15.0099L12.7449 13.1166L10.3499 15.1833L11.9799 17.0766ZM18.7399 8.28661L19.5333 5.22994L17.1133 4.60328L16.3199 7.65828L18.7399 8.28661ZM20.7299 4.62994L20.9716 4.70828L21.7366 2.32828L21.4949 2.24994L20.7299 4.62994ZM17.5383 11.3599C18.0586 10.3865 18.4619 9.35484 18.7399 8.28661L16.3199 7.65828C16.0903 8.53542 15.7592 9.38281 15.3333 10.1833L17.5383 11.3599ZM20.9716 4.70828C21.2091 4.78104 21.4244 4.91225 21.598 5.08988C21.7715 5.26751 21.8977 5.48587 21.9649 5.72494L24.3849 5.09828C24.2133 4.45025 23.8802 3.8563 23.4168 3.3719C22.9534 2.8875 22.3764 2.52844 21.7366 2.32828L20.9716 4.70828ZM19.5333 5.22994C19.566 5.10966 19.6247 4.99803 19.7054 4.90299C19.786 4.80794 19.8866 4.73179 19.9999 4.67994L18.9149 2.42828C18.0283 2.85494 17.3616 3.64494 17.1133 4.60328L19.5333 5.22994ZM19.9999 4.67994C20.2282 4.57165 20.489 4.55379 20.7299 4.62994L21.4949 2.24994C20.6437 1.97783 19.7206 2.04163 18.9149 2.42828L19.9999 4.67994ZM23.5899 18.3066H32.2233V15.8066H23.5899V18.3066ZM24.5583 8.90494C24.7678 7.63792 24.7087 6.34101 24.3849 5.09828L21.9649 5.72661C22.2013 6.63192 22.2445 7.57685 22.0916 8.49994L24.5583 8.90494ZM14.3266 35.4166C13.945 35.416 13.5774 35.2724 13.2964 35.0142C13.0153 34.7559 12.8412 34.4018 12.8083 34.0216L10.3183 34.2366C10.405 35.2402 10.8647 36.1749 11.6068 36.8561C12.3488 37.5374 13.3193 37.9158 14.3266 37.9166V35.4166ZM14.3783 15.0099C15.5116 14.0333 16.7316 12.8716 17.5399 11.3599L15.3333 10.1833C14.7566 11.2649 13.8366 12.1766 12.7449 13.1166L14.3783 15.0099ZM36.1899 20.5216C36.2903 19.9433 36.263 19.35 36.1099 18.7833C35.9568 18.2166 35.6817 17.6902 35.3038 17.241C34.9259 16.7919 34.4544 16.4307 33.9223 16.1829C33.3901 15.9352 32.8103 15.8067 32.2233 15.8066V18.3066C33.1683 18.3066 33.8899 19.1599 33.7266 20.0949L36.1899 20.5216ZM20.9866 15.2416C20.9245 15.6192 20.9452 16.0059 21.0475 16.3747C21.1497 16.7435 21.3309 17.0856 21.5786 17.3774C21.8263 17.6691 22.1345 17.9035 22.4818 18.0643C22.8291 18.225 23.2072 18.3066 23.5899 18.3066V15.8066C23.5696 15.8067 23.5495 15.804 23.5311 15.7954C23.5126 15.7868 23.4963 15.7743 23.4832 15.7587C23.4702 15.7431 23.4607 15.7248 23.4556 15.7052C23.4504 15.6855 23.4496 15.6649 23.4533 15.6449L20.9866 15.2416ZM11.4549 18.3666C11.4346 18.1253 11.4701 17.8826 11.5616 17.6583C11.6532 17.4341 11.7965 17.2348 11.9799 17.0766L10.3466 15.1816C9.86351 15.5985 9.48623 16.1241 9.24575 16.7151C9.00527 17.3062 8.90846 17.9459 8.96327 18.5816L11.4549 18.3666Z" fill="url(#ss_g1)"/>
+          <path opacity="0.5" d="M5 17.0583L6.245 16.9516C6.21631 16.6315 6.06539 16.3347 5.8236 16.1229C5.58181 15.9111 5.26773 15.8006 4.9466 15.8144C4.62547 15.8281 4.32196 15.965 4.09913 16.1967C3.8763 16.4283 3.75126 16.7369 3.75 17.0583H5ZM7.865 35.6783L6.245 16.9516L3.755 17.165L5.37333 35.8933L7.865 35.6783ZM6.25 35.8566V17.0566L3.75 17.0583V35.855L6.25 35.8566ZM5.37333 35.8933C5.36825 35.8327 5.37582 35.7718 5.39556 35.7143C5.4153 35.6568 5.44678 35.604 5.488 35.5594C5.52922 35.5147 5.57928 35.4791 5.635 35.4548C5.69072 35.4305 5.75088 35.4181 5.81167 35.4183V37.9183C7.02167 37.9183 7.96833 36.8816 7.865 35.6783L5.37333 35.8933ZM5.81167 35.4183C6.055 35.4183 6.25 35.6166 6.25 35.8566L3.75 35.855C3.75 36.9916 4.67167 37.9183 5.81167 37.9183V35.4183Z" fill="url(#ss_g2)"/>
+          <defs>
+            <linearGradient id="ss_g1" x1="36.25" y1="20" x2="8.95" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+            <linearGradient id="ss_g2" x1="7.87" y1="26.87" x2="3.75" y2="26.87" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          </defs>
+        </svg>
         <span class="stat-card__number">95%</span>
       </div>
       <p class="stat-card__label">Client Satisfaction Rate</p>
     </div>
 
   </div>
+</section>
 
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 · What Makes TaqTech Different
+════════════════════════════════════════════ -->
+<section class="what-makes-us">
+  <div class="wmu__bg" aria-hidden="true"></div>
+
+  <div class="wmu__left" scrollAnimate="fade-right">
+    <h2 class="wmu__heading">
+      <span class="wmu__heading-line">What Makes TaqTech</span>
+      <span class="wmu__heading-line">Different</span>
+    </h2>
+    <p class="wmu__sub">
+      We design and develop digital solutions across multiple
+      industries — delivering scalable, high-performance products
+      tailored to different business needs.
+    </p>
+  </div>
+
+  <div class="wmu__grid" scrollAnimate="fade-left" [animDelay]="150">
+
+    <!-- Strategy-First -->
+    <div class="feature-card">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M33.3332 20.0001C33.3332 23.5363 31.9284 26.9277 29.4279 29.4282C26.9274 31.9287 23.5361 33.3334 19.9998 33.3334C16.4636 33.3334 13.0722 31.9287 10.5717 29.4282C8.07126 26.9277 6.6665 23.5363 6.6665 20.0001C6.6665 16.4639 8.07126 13.0725 10.5717 10.572C13.0722 8.07151 16.4636 6.66675 19.9998 6.66675C23.5361 6.66675 26.9274 8.07151 29.4279 10.572C31.9284 13.0725 33.3332 16.4639 33.3332 20.0001Z" stroke="#60B4FD" stroke-width="2.5"/>
+        <path d="M25 20C25 21.3261 24.4732 22.5979 23.5355 23.5355C22.5979 24.4732 21.3261 25 20 25C18.6739 25 17.4021 24.4732 16.4645 23.5355C15.5268 22.5979 15 21.3261 15 20C15 18.6739 15.5268 17.4021 16.4645 16.4645C17.4021 15.5268 18.6739 15 20 15C21.3261 15 22.5979 15.5268 23.5355 16.4645C24.4732 17.4021 25 18.6739 25 20Z" stroke="#60B4FD" stroke-width="2.5"/>
+        <path d="M3.33325 20H6.66659M33.3333 20H36.6666M19.9999 6.66671V3.33337M19.9999 36.6667V33.3334" stroke="#60B4FD" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <h3 class="feature-card__title">Strategy-First</h3>
+      <p class="feature-card__desc">Business goals drive every decision.</p>
+    </div>
+
+    <!-- Scalable by Design -->
+    <div class="feature-card">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M36.6666 11.6666L24.3666 23.8916C22.7049 25.5433 21.8733 26.37 20.8416 26.37C19.8099 26.37 18.9799 25.5433 17.3166 23.89L16.9166 23.4933C15.2549 21.84 14.4216 21.0116 13.3899 21.0116C12.3583 21.0116 11.5266 21.84 9.86492 23.495L3.33325 30M27.3633 11.6666H36.6666V20.91" stroke="#60B4FD" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>               
+      <h3 class="feature-card__title">Scalable by Design</h3>
+      <p class="feature-card__desc">Built to grow with you.</p>
+    </div>
+
+    <!-- End-to-End -->
+    <div class="feature-card">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5" d="M19.9999 36.6667C29.2049 36.6667 36.6666 29.205 36.6666 20C36.6666 10.795 29.2049 3.33337 19.9999 3.33337C10.7949 3.33337 3.33325 10.795 3.33325 20C3.33325 29.205 10.7949 36.6667 19.9999 36.6667Z" stroke="#60B4FD" stroke-width="2.5"/>
+        <path d="M25.8333 15.0001L26.12 15.2867C28.3416 17.5084 29.4533 18.6201 29.4533 20.0001C29.4533 21.3801 28.3416 22.4917 26.12 24.7134L25.8333 25.0001M22.1566 11.9501L20 20.0001L17.8433 28.0501M14.1666 15.0001L13.88 15.2867C11.6583 17.5084 10.5466 18.6201 10.5466 20.0001C10.5466 21.3801 11.6583 22.4917 13.88 24.7134L14.1666 25.0001" stroke="#60B4FD" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>        
+      <h3 class="feature-card__title">End-to-End</h3>
+      <p class="feature-card__desc">From idea to deployment.</p>
+    </div>
+
+    <!-- Long-Term Focus -->
+    <div class="feature-card">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.6666 36.6667V21.6667C26.6666 19.3101 26.6666 18.1317 25.9333 17.4001C25.2033 16.6667 24.0249 16.6667 21.6666 16.6667H18.3333C15.9766 16.6667 14.7983 16.6667 14.0666 17.4001C13.3333 18.1301 13.3333 19.3084 13.3333 21.6667V36.6667" stroke="#60B4FD" stroke-width="2.5" stroke-linecap="round"/>
+        <path opacity="0.5" d="M13.3333 36.6667C13.3333 34.3101 13.3333 33.1317 12.5999 32.4001C11.8699 31.6667 10.6916 31.6667 8.33325 31.6667C5.97492 31.6667 4.79825 31.6667 4.06659 32.4001C3.33325 33.1301 3.33325 34.3084 3.33325 36.6667M36.6666 36.6667V31.6667C36.6666 29.3101 36.6666 28.1317 35.9333 27.4001C35.2033 26.6667 34.0249 26.6667 31.6666 26.6667C29.3083 26.6667 28.1316 26.6667 27.3999 27.4001C26.6666 28.1301 26.6666 29.3084 26.6666 31.6667V36.6667" stroke="#60B4FD" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M18.5766 5.03837C19.21 3.90004 19.5266 3.33337 20 3.33337C20.4733 3.33337 20.79 3.90004 21.4233 5.03837L21.5866 5.33171C21.7666 5.65504 21.8566 5.81504 21.9966 5.92171C22.1383 6.02837 22.3133 6.06837 22.6633 6.14671L22.98 6.22004C24.21 6.49837 24.825 6.63671 24.9716 7.10671C25.1183 7.57671 24.6983 8.06837 23.86 9.04837L23.6433 9.30171C23.405 9.58004 23.285 9.71837 23.2316 9.89171C23.1783 10.065 23.1966 10.25 23.2316 10.6217L23.265 10.96C23.3916 12.2684 23.455 12.9234 23.0733 13.2134C22.69 13.505 22.1133 13.2384 20.9616 12.7084L20.665 12.5717C20.3366 12.4217 20.1733 12.345 20 12.345C19.8266 12.345 19.6633 12.4217 19.335 12.5717L19.0383 12.7084C17.8866 13.2384 17.31 13.505 16.9266 13.2134C16.5433 12.9234 16.6083 12.2684 16.735 10.96L16.7683 10.6217C16.8033 10.25 16.8216 10.065 16.7683 9.89171C16.715 9.71837 16.595 9.58004 16.3566 9.30171L16.14 9.04837C15.3016 8.06837 14.8816 7.57837 15.0283 7.10671C15.175 6.63671 15.79 6.49837 17.02 6.22004L17.3366 6.14671C17.6866 6.06837 17.8616 6.03004 18.0033 5.92171C18.1433 5.81504 18.2333 5.65504 18.4133 5.33171L18.5766 5.03837Z" stroke="#60B4FD" stroke-width="2.5"/>
+        </svg>        
+      <h3 class="feature-card__title">Long-Term Focus</h3>
+      <p class="feature-card__desc">We grow with your business.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 4 · Our Process
+════════════════════════════════════════════ -->
+<section class="our-process">
+  <div class="our-process__bg" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <div class="our-process__header" scrollAnimate="fade-up">
+    <div class="section-label section-label--center">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_170_1774)">
+        <g filter="url(#filter0_d_170_1774)">
+        <path d="M32 44V26C32 23.172 32 21.758 31.12 20.88C30.244 20 28.83 20 26 20H22C19.172 20 17.758 20 16.88 20.88C16 21.756 16 23.17 16 26V44" stroke="url(#paint0_linear_170_1774)" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+        <g opacity="0.5" filter="url(#filter1_d_170_1774)">
+        <path d="M16 44C16 41.172 16 39.758 15.12 38.88C14.244 38 12.83 38 10 38C7.17 38 5.758 38 4.88 38.88C4 39.756 4 41.17 4 44M44 44V38C44 35.172 44 33.758 43.12 32.88C42.244 32 40.83 32 38 32C35.17 32 33.758 32 32.88 32.88C32 33.756 32 35.17 32 38V44" stroke="url(#paint1_linear_170_1774)" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+        <g filter="url(#filter2_d_170_1774)">
+        <path d="M22.2921 6.046C23.0521 4.68 23.4321 4 24.0001 4C24.5681 4 24.9481 4.68 25.7081 6.046L25.9041 6.398C26.1201 6.786 26.2281 6.978 26.3961 7.106C26.5661 7.234 26.7761 7.282 27.1961 7.376L27.5761 7.464C29.0521 7.798 29.7901 7.964 29.9661 8.528C30.1421 9.092 29.6381 9.682 28.6321 10.858L28.3721 11.162C28.0861 11.496 27.9421 11.662 27.8781 11.87C27.8141 12.078 27.8361 12.3 27.8781 12.746L27.9181 13.152C28.0701 14.722 28.1461 15.508 27.6881 15.856C27.2281 16.206 26.5361 15.886 25.1541 15.25L24.7981 15.086C24.4041 14.906 24.2081 14.814 24.0001 14.814C23.7921 14.814 23.5961 14.906 23.2021 15.086L22.8461 15.25C21.4641 15.886 20.7721 16.206 20.3121 15.856C19.8521 15.508 19.9301 14.722 20.0821 13.152L20.1221 12.746C20.1641 12.3 20.1861 12.078 20.1221 11.87C20.0581 11.662 19.9141 11.496 19.6281 11.162L19.3681 10.858C18.3621 9.682 17.8581 9.094 18.0341 8.528C18.2101 7.964 18.9481 7.798 20.4241 7.464L20.8041 7.376C21.2241 7.282 21.4341 7.236 21.6041 7.106C21.7721 6.978 21.8801 6.786 22.0961 6.398L22.2921 6.046Z" stroke="url(#paint2_linear_170_1774)" stroke-width="3.5"/>
+        </g>
+        </g>
+        <defs>
+        <filter id="filter0_d_170_1774" x="11.25" y="15.25" width="25.5" height="33.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="1.5"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.633333 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_170_1774"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_170_1774" result="shape"/>
+        </filter>
+        <filter id="filter1_d_170_1774" x="-0.75" y="27.25" width="49.5" height="21.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="1.5"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.633333 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_170_1774"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_170_1774" result="shape"/>
+        </filter>
+        <filter id="filter2_d_170_1774" x="13.2483" y="-0.75" width="21.5037" height="21.4998" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset/>
+        <feGaussianBlur stdDeviation="1.5"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.633333 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_170_1774"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_170_1774" result="shape"/>
+        </filter>
+        <linearGradient id="paint0_linear_170_1774" x1="32" y1="32" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_170_1774" x1="44" y1="38" x2="4" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_170_1774" x1="30.0006" y1="10.0001" x2="17.9995" y2="10.0001" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <clipPath id="clip0_170_1774">
+        <rect width="48" height="48" fill="white"/>
+        </clipPath>
+        </defs>
+        </svg>        
+      <span class="section-label__text">Our Process</span>
+    </div>
+    <p class="our-process__sub">
+      We design and develop digital solutions across multiple industries — delivering scalable,
+      high-performance products tailored to different business needs.
+    </p>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline">
+    <!-- Curved S-line -->
+    <svg class="timeline__curve" viewBox="0 0 200 1000" preserveAspectRatio="none" fill="none" aria-hidden="true">
+      <path d="M 100,0
+               C 170,0   170,70  100,110
+               C 30,150  30,320  100,370
+               C 170,420 170,590 100,630
+               C 30,670  30,850  100,890
+               C 170,930 170,1000 100,1000"
+            stroke="rgba(150, 100, 255, 0.3)"
+            stroke-width="2.5"
+            stroke-dasharray="10 8"
+            vector-effect="non-scaling-stroke"/>
+    </svg>
+
+    <!-- Step 1 · Strategy → text left, image right -->
+    <div class="process-step" scrollAnimate="fade-up">
+      <div class="process-step__text">
+        <span class="process-step__num">1</span>
+        <h3 class="process-step__title">Strategy</h3>
+        <p class="process-step__desc">We analyze your business, define goals,<br>and create a clear roadmap.</p>
+        <ul class="process-step__list">
+          <li>Business and product analysis</li>
+          <li>Requirement gathering</li>
+          <li>Competitor and market research</li>
+          <li>Technical planning and roadmap definition</li>
+        </ul>
+      </div>
+      <div class="timeline__dot" aria-hidden="true"></div>
+      <div class="process-step__image">
+        <img class="process-img" src="/process1.png" alt="Strategy" />
+      </div>
+    </div>
+
+    <!-- Step 2 · Design → image left, text right -->
+    <div class="process-step" scrollAnimate="fade-up" [animDelay]="100">
+      <div class="process-step__image">
+        <img class="process-img" src="/process2.png" alt="Design" />
+      </div>
+      <div class="timeline__dot" aria-hidden="true"></div>
+      <div class="process-step__text">
+        <span class="process-step__num">2</span>
+        <h3 class="process-step__title">Design</h3>
+        <p class="process-step__desc">We craft intuitive user experiences and system architecture.</p>
+        <ul class="process-step__list">
+          <li>User journey mapping</li>
+          <li>Wireframing and prototyping</li>
+          <li>UI design and design systems</li>
+          <li>System architecture planning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 3 · Development → text left, image right -->
+    <div class="process-step" scrollAnimate="fade-up" [animDelay]="200">
+      <div class="process-step__text">
+        <span class="process-step__num">3</span>
+        <h3 class="process-step__title">Development</h3>
+        <p class="process-step__desc">We build scalable, secure, and high-performance solutions.</p>
+        <ul class="process-step__list">
+          <li>Frontend and backend development</li>
+          <li>API development and integrations</li>
+          <li>Database and infrastructure setup</li>
+          <li>Continuous testing and optimization</li>
+        </ul>
+      </div>
+      <div class="timeline__dot" aria-hidden="true"></div>
+      <div class="process-step__image">
+        <img class="process-img" src="/process3.png" alt="Development" />
+      </div>
+    </div>
+
+    <!-- Step 4 · Launch & Scale → image left, text right -->
+    <div class="process-step" scrollAnimate="fade-up" [animDelay]="300">
+      <div class="process-step__image">
+        <img class="process-img" src="/process4.png" alt="Launch & Scale" />
+      </div>
+      <div class="timeline__dot" aria-hidden="true"></div>
+      <div class="process-step__text">
+        <span class="process-step__num">4</span>
+        <h3 class="process-step__title">Launch &amp; Scale</h3>
+        <p class="process-step__desc">We deploy, monitor, and continuously improve your product.</p>
+        <ul class="process-step__list">
+          <li>Deployment and release management</li>
+          <li>Performance monitoring</li>
+          <li>Bug fixing and optimization</li>
+          <li>Ongoing support and scaling</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 5 · Our Expertise
+════════════════════════════════════════════ -->
+<section class="expertise">
+  <div class="expertise__bg" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <div class="expertise__header" scrollAnimate="fade-up">
+    <div class="section-label section-label--center">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 3px #a100ff)">
+        <path d="M4 11L6.428 14L15 6" stroke="url(#paint0_linear_170_1951)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M4 25L6.428 28L15 20" stroke="url(#paint1_linear_170_1951)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 39L6.428 42L15 34" stroke="url(#paint2_linear_170_1951)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M44 38H24" stroke="url(#paint3_linear_170_1951)" stroke-width="3.5" stroke-linecap="round"/>
+        <path opacity="0.5" d="M44 24H24" stroke="url(#paint4_linear_170_1951)" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M44 10H24" stroke="url(#paint5_linear_170_1951)" stroke-width="3.5" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="paint0_linear_170_1951" x1="15" y1="10" x2="4" y2="10" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="paint1_linear_170_1951" x1="15" y1="24" x2="4" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="paint2_linear_170_1951" x1="15" y1="38" x2="4" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="paint3_linear_170_1951" x1="44" y1="38.5" x2="24" y2="38.5" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="paint4_linear_170_1951" x1="44" y1="24.5" x2="24" y2="24.5" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+          <linearGradient id="paint5_linear_170_1951" x1="44" y1="10.5" x2="24" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="#9723EA"/><stop offset="1" stop-color="#1797FF"/></linearGradient>
+        </defs>
+      </svg>
+      <span class="section-label__text">Our Expertise</span>
+    </div>
+    <p class="expertise__sub">We specialize in building modern digital solutions using the latest technologies and frameworks.</p>
+  </div>
+
+  <!-- 3 × 2 Card Grid -->
+  <div class="expertise__grid">
+
+    <!-- Frontend -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="0">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">Frontend</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="" aria-hidden="true" />Angular</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" aria-hidden="true" />TypeScript</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="" aria-hidden="true" />Tailwind CSS</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" aria-hidden="true" />React</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--frontend" aria-hidden="true"></div>
+    </div>
+
+    <!-- Backend -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="100">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">Backend</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt="" aria-hidden="true" />.NET</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="" aria-hidden="true" />Django</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" aria-hidden="true" />Python</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="" aria-hidden="true" />Node.js</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--backend" aria-hidden="true"></div>
+    </div>
+
+    <!-- Database -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="200">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">Database</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" aria-hidden="true" />PostgreSQL</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" aria-hidden="true" />MongoDB</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" aria-hidden="true" />Redis</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" aria-hidden="true" />MySQL</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--database" aria-hidden="true"></div>
+    </div>
+
+    <!-- Design -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="100">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">Design</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="" aria-hidden="true" />Figma</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="" aria-hidden="true" />Illustrator</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg" alt="" aria-hidden="true" />Photoshop</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg" alt="" aria-hidden="true" />After Effects</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--design" aria-hidden="true"></div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="200">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">Mobile</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="" aria-hidden="true" />Flutter</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" aria-hidden="true" />React Native</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="" aria-hidden="true" />Dart</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--mobile" aria-hidden="true"></div>
+    </div>
+
+    <!-- DevOps -->
+    <div class="exp-card" scrollAnimate="fade-up" [animDelay]="300">
+      <div class="exp-card__content">
+        <h3 class="exp-card__title">DevOps</h3>
+        <ul class="tech-list">
+          <li><img class="tech-icon tech-icon--aws" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" aria-hidden="true" />AWS</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" aria-hidden="true" />Azure</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" aria-hidden="true" />Docker</li>
+          <li><img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" alt="" aria-hidden="true" />Kubernetes</li>
+        </ul>
+      </div>
+      <div class="exp-card__bg exp-card__bg--devops" aria-hidden="true"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SECTION 6 · Numbers That Matter
+════════════════════════════════════════════ -->
+<section class="numbers">
+
+  <!-- Globe / network background -->
+  <div class="numbers__globe" aria-hidden="true">
+    <div class="numbers__globe-inner"></div>
+  </div>
+  <div class="numbers__dots" aria-hidden="true"></div>
+
+  <div class="numbers__content">
+  <!-- Header -->
+  <div class="numbers__header" scrollAnimate="fade-up">
+    <div class="section-label section-label--center">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 11L6.428 14L15 6" stroke="url(#paint0_linear_170_1963)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path opacity="0.5" d="M4 25L6.428 28L15 20" stroke="url(#paint1_linear_170_1963)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 39L6.428 42L15 34" stroke="url(#paint2_linear_170_1963)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M44 38H24" stroke="url(#paint3_linear_170_1963)" stroke-width="3.5" stroke-linecap="round"/>
+        <path opacity="0.5" d="M44 24H24" stroke="url(#paint4_linear_170_1963)" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M44 10H24" stroke="url(#paint5_linear_170_1963)" stroke-width="3.5" stroke-linecap="round"/>
+        <defs>
+        <linearGradient id="paint0_linear_170_1963" x1="15" y1="10" x2="4" y2="10" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_170_1963" x1="15" y1="24" x2="4" y2="24" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_170_1963" x1="15" y1="38" x2="4" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_170_1963" x1="44" y1="38.5" x2="24" y2="38.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_170_1963" x1="44" y1="24.5" x2="24" y2="24.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        <linearGradient id="paint5_linear_170_1963" x1="44" y1="10.5" x2="24" y2="10.5" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9723EA"/>
+        <stop offset="1" stop-color="#1797FF"/>
+        </linearGradient>
+        </defs>
+        </svg>        
+      <span class="section-label__text num-label">NUMBERS THAT MATTER</span>
+    </div>
+    <p class="numbers__sub">We specialize in building modern digital solutions using the latest technologies and frameworks.</p>
+  </div>
+
+  <!-- Stat cards row -->
+  <div class="numbers__grid" scrollAnimate="fade-up" [animDelay]="200">
+
+    <!-- 4+ Years -->
+    <div class="num-card">
+      <div class="num-card__top">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M18.5768 11.705C19.2101 10.5667 19.5268 10 20.0001 10C20.4734 10 20.7901 10.5667 21.4234 11.705L21.5868 11.9983C21.7668 12.3217 21.8568 12.4817 21.9968 12.5883C22.1384 12.695 22.3134 12.735 22.6634 12.8133L22.9801 12.8867C24.2101 13.165 24.8251 13.3033 24.9718 13.7733C25.1184 14.2433 24.6984 14.735 23.8601 15.715L23.6434 15.9683C23.4051 16.2467 23.2851 16.385 23.2318 16.5583C23.1784 16.7317 23.1968 16.9167 23.2318 17.2883L23.2651 17.6267C23.3918 18.935 23.4551 19.59 23.0734 19.88C22.6901 20.17 22.1134 19.905 20.9618 19.375L20.6651 19.2383C20.3368 19.0883 20.1734 19.0133 20.0001 19.0133C19.8268 19.0133 19.6634 19.0883 19.3351 19.2383L19.0384 19.375C17.8868 19.9067 17.3101 20.17 16.9268 19.88C16.5434 19.59 16.6084 18.935 16.7351 17.6267L16.7684 17.2883C16.8034 16.9167 16.8218 16.7317 16.7684 16.5583C16.7151 16.385 16.5951 16.2467 16.3568 15.9683L16.1401 15.715C15.3018 14.735 14.8818 14.245 15.0284 13.7733C15.1751 13.3033 15.7901 13.165 17.0201 12.8867L17.3368 12.8133C17.6868 12.735 17.8618 12.6967 18.0034 12.5883C18.1434 12.4817 18.2334 12.3217 18.4134 11.9983L18.5768 11.705Z" stroke="url(#paint0_linear_176_593)" stroke-width="2.5"/>
+          <path d="M31.6667 15.0002C31.6667 16.5323 31.3649 18.0493 30.7786 19.4648C30.1923 20.8803 29.333 22.1664 28.2496 23.2497C27.1663 24.3331 25.8801 25.1925 24.4647 25.7788C23.0492 26.3651 21.5321 26.6668 20 26.6668C18.468 26.6668 16.9509 26.3651 15.5354 25.7788C14.1199 25.1925 12.8338 24.3331 11.7505 23.2497C10.6671 22.1664 9.80775 20.8803 9.22145 19.4648C8.63514 18.0493 8.33337 16.5323 8.33337 15.0002C8.33337 11.906 9.56254 8.93851 11.7505 6.75058C13.9384 4.56266 16.9058 3.3335 20 3.3335C23.0942 3.3335 26.0617 4.56266 28.2496 6.75058C30.4375 8.93851 31.6667 11.906 31.6667 15.0002Z" stroke="url(#paint1_linear_176_593)" stroke-width="2.5"/>
+          <path opacity="0.5" d="M12.2517 25L11.19 28.8717C10.1433 32.6917 9.62001 34.6017 10.3183 35.6467C10.5633 36.0133 10.8917 36.3067 11.2733 36.5017C12.36 37.055 14.04 36.18 17.3983 34.43C18.515 33.8467 19.075 33.5567 19.6683 33.4933C19.8889 33.4713 20.1111 33.4713 20.3317 33.4933C20.925 33.5567 21.4833 33.8483 22.6017 34.43C25.96 36.18 27.64 37.055 28.7267 36.5017C29.1083 36.3067 29.4367 36.0133 29.6817 35.6467C30.3817 34.6017 29.8567 32.6917 28.81 28.8717L27.7483 25" stroke="url(#paint2_linear_176_593)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+          <linearGradient id="paint0_linear_176_593" x1="25.0006" y1="14.9999" x2="14.9996" y2="14.9999" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_176_593" x1="31.6667" y1="15.0002" x2="8.33337" y2="15.0002" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear_176_593" x1="30.0005" y1="30.8334" x2="10.0002" y2="30.8334" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          </defs>
+          </svg>          
+        <span class="num-card__value">4+</span>
+      </div>
+      <p class="num-card__label">Years of Experience</p>
+    </div>
+
+    <!-- 22+ Projects -->
+    <div class="num-card">
+      <div class="num-card__top">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.33337 23.3333C3.33337 17.0483 3.33337 13.905 5.28671 11.9533C7.24004 10.0017 10.3817 10 16.6667 10H23.3334C29.6184 10 32.7617 10 34.7134 11.9533C36.665 13.9067 36.6667 17.0483 36.6667 23.3333C36.6667 29.6183 36.6667 32.7617 34.7134 34.7133C32.76 36.665 29.6184 36.6667 23.3334 36.6667H16.6667C10.3817 36.6667 7.23837 36.6667 5.28671 34.7133C3.33504 32.76 3.33337 29.6183 3.33337 23.3333Z" stroke="url(#paint0_linear_176_598)" stroke-width="2.5"/>
+          <path opacity="0.5" d="M36.1034 14.5332C31.0867 17.7932 28.5784 19.4232 25.9351 20.2449C22.0701 21.4457 17.9317 21.4457 14.0667 20.2449C11.4217 19.4232 8.9134 17.7949 3.89673 14.5332" stroke="url(#paint1_linear_176_598)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M13.3334 18.333V21.6663M26.6667 18.333V21.6663" stroke="url(#paint2_linear_176_598)" stroke-width="2.5" stroke-linecap="round"/>
+          <path opacity="0.5" d="M15.2833 6.66652C15.6277 5.69063 16.2662 4.84558 17.111 4.24784C17.9558 3.65009 18.9651 3.3291 20 3.3291C21.0348 3.3291 22.0442 3.65009 22.889 4.24784C23.7338 4.84558 24.3723 5.69063 24.7167 6.66652" stroke="url(#paint3_linear_176_598)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+          <linearGradient id="paint0_linear_176_598" x1="36.6667" y1="23.3333" x2="3.33337" y2="23.3333" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_176_598" x1="36.1034" y1="17.8394" x2="3.89673" y2="17.8394" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear_176_598" x1="26.6667" y1="19.9997" x2="13.3334" y2="19.9997" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint3_linear_176_598" x1="24.7167" y1="4.99781" x2="15.2833" y2="4.99781" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          </defs>
+          </svg>          
+        <span class="num-card__value">22+</span>
+      </div>
+      <p class="num-card__label">Delivered Projects</p>
+    </div>
+
+    <!-- 95% Satisfaction -->
+    <div class="num-card">
+      <div class="num-card__top">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.7267 20.0952L32.5501 26.8952L35.0151 27.3219L36.1901 20.5219L33.7267 20.0952ZM22.0751 35.4169H14.3267V37.9169H22.0751V35.4169ZM12.8084 34.0219L11.4551 18.3669L8.9634 18.5819L10.3184 34.2369L12.8084 34.0219ZM32.5501 26.8952C31.7051 31.7785 27.3017 35.4169 22.0751 35.4169V37.9169C28.4517 37.9169 33.9517 33.4685 35.0151 27.3219L32.5501 26.8952ZM22.0917 8.50019L20.9867 15.2419L23.4534 15.6452L24.5584 8.90519L22.0917 8.50019ZM11.9801 17.0769L14.3784 15.0102L12.7451 13.1169L10.3501 15.1835L11.9801 17.0769ZM18.7401 8.28685L19.5334 5.23019L17.1134 4.60352L16.3201 7.65852L18.7401 8.28685ZM20.7301 4.63019L20.9717 4.70852L21.7367 2.32852L21.4951 2.25019L20.7301 4.63019ZM17.5384 11.3602C18.0587 10.3867 18.4621 9.35509 18.7401 8.28685L16.3201 7.65852C16.0904 8.53567 15.7593 9.38305 15.3334 10.1835L17.5384 11.3602ZM20.9717 4.70852C21.2092 4.78128 21.4245 4.9125 21.5981 5.09013C21.7717 5.26776 21.8978 5.48612 21.9651 5.72519L24.3851 5.09852C24.2134 4.4505 23.8803 3.85655 23.4169 3.37214C22.9535 2.88774 22.3765 2.52869 21.7367 2.32852L20.9717 4.70852ZM19.5334 5.23019C19.5661 5.1099 19.6249 4.99828 19.7055 4.90323C19.7861 4.80818 19.8867 4.73204 20.0001 4.68019L18.9151 2.42852C18.0284 2.85519 17.3617 3.64519 17.1134 4.60352L19.5334 5.23019ZM20.0001 4.68019C20.2283 4.5719 20.4892 4.55403 20.7301 4.63019L21.4951 2.25019C20.6438 1.97807 19.7208 2.04188 18.9151 2.42852L20.0001 4.68019ZM23.5901 18.3069H32.2234V15.8069H23.5901V18.3069ZM24.5584 8.90519C24.7679 7.63816 24.7089 6.34126 24.3851 5.09852L21.9651 5.72685C22.2014 6.63217 22.2446 7.5771 22.0917 8.50019L24.5584 8.90519ZM14.3267 35.4169C13.9451 35.4162 13.5775 35.2726 13.2965 35.0144C13.0154 34.7562 12.8413 34.4021 12.8084 34.0219L10.3184 34.2369C10.4051 35.2405 10.8649 36.1751 11.6069 36.8564C12.3489 37.5376 13.3194 37.916 14.3267 37.9169V35.4169ZM14.3784 15.0102C15.5117 14.0335 16.7317 12.8719 17.5401 11.3602L15.3334 10.1835C14.7567 11.2652 13.8367 12.1769 12.7451 13.1169L14.3784 15.0102ZM36.1901 20.5219C36.2904 19.9435 36.2631 19.3502 36.11 18.7835C35.957 18.2168 35.6818 17.6905 35.304 17.2413C34.9261 16.7921 34.4545 16.431 33.9224 16.1832C33.3903 15.9354 32.8104 15.807 32.2234 15.8069V18.3069C33.1684 18.3069 33.8901 19.1602 33.7267 20.0952L36.1901 20.5219ZM20.9867 15.2419C20.9246 15.6195 20.9454 16.0061 21.0476 16.3749C21.1498 16.7437 21.3311 17.0859 21.5787 17.3776C21.8264 17.6694 22.1346 17.9038 22.4819 18.0645C22.8292 18.2253 23.2074 18.3069 23.5901 18.3069V15.8069C23.5697 15.8069 23.5496 15.8042 23.5312 15.7956C23.5127 15.7871 23.4964 15.7746 23.4834 15.759C23.4703 15.7434 23.4609 15.7251 23.4557 15.7054C23.4505 15.6858 23.4497 15.6652 23.4534 15.6452L20.9867 15.2419ZM11.4551 18.3669C11.4347 18.1255 11.4702 17.8828 11.5617 17.6586C11.6533 17.4344 11.7966 17.235 11.9801 17.0769L10.3467 15.1819C9.86364 15.5987 9.48635 16.1243 9.24587 16.7154C9.00539 17.3064 8.90858 17.9461 8.9634 18.5819L11.4551 18.3669Z" fill="url(#paint0_linear_176_603)"/>
+          <path opacity="0.5" d="M5 17.0586L6.245 16.9519C6.21631 16.6317 6.06539 16.335 5.8236 16.1232C5.58181 15.9114 5.26773 15.8009 4.9466 15.8146C4.62547 15.8283 4.32196 15.9653 4.09913 16.1969C3.8763 16.4286 3.75126 16.7371 3.75 17.0586H5ZM7.865 35.6786L6.245 16.9519L3.755 17.1652L5.37333 35.8936L7.865 35.6786ZM6.25 35.8569V17.0569L3.75 17.0586V35.8552L6.25 35.8569ZM5.37333 35.8936C5.36825 35.833 5.37582 35.772 5.39556 35.7145C5.4153 35.657 5.44678 35.6043 5.488 35.5596C5.52922 35.515 5.57928 35.4793 5.635 35.4551C5.69072 35.4308 5.75088 35.4183 5.81167 35.4186V37.9186C7.02167 37.9186 7.96833 36.8819 7.865 35.6786L5.37333 35.8936ZM5.81167 35.4186C6.055 35.4186 6.25 35.6169 6.25 35.8569L3.75 35.8552C3.75 36.9919 4.67167 37.9186 5.81167 37.9186V35.4186Z" fill="url(#paint1_linear_176_603)"/>
+          <defs>
+          <linearGradient id="paint0_linear_176_603" x1="36.2493" y1="20.0004" x2="8.94849" y2="20.0004" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_176_603" x1="7.87272" y1="26.866" x2="3.75" y2="26.866" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          </defs>
+          </svg>          
+        <span class="num-card__value">95%</span>
+      </div>
+      <p class="num-card__label">Client Satisfaction Rate</p>
+    </div>
+
+    <!-- 7+ Business Fields -->
+    <div class="num-card">
+      <div class="num-card__top">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.5" d="M3.3335 20.0002H36.6668M26.6668 20.0002C26.6668 22.1885 26.4935 24.3568 26.1585 26.3785C25.8252 28.4002 25.3335 30.2368 24.7135 31.7852C24.0952 33.3335 23.3602 34.5602 22.5518 35.3985C21.7418 36.2352 20.8752 36.6668 20.0002 36.6668C19.1252 36.6668 18.2585 36.2352 17.4502 35.3985C16.6402 34.5602 15.9052 33.3318 15.2868 31.7852C14.6668 30.2368 14.1752 28.4018 13.8402 26.3785C13.4983 24.2697 13.3289 22.1365 13.3335 20.0002C13.3335 17.8118 13.5052 15.6435 13.8402 13.6218C14.1752 11.6002 14.6668 9.7635 15.2868 8.21516C15.9052 6.66683 16.6402 5.44016 17.4485 4.60183C18.2585 3.76683 19.1252 3.3335 20.0002 3.3335C20.8752 3.3335 21.7418 3.76516 22.5502 4.60183C23.3602 5.44016 24.0952 6.6685 24.7135 8.21516C25.3335 9.7635 25.8252 11.5985 26.1585 13.6218C26.4952 15.6435 26.6668 17.8118 26.6668 20.0002Z" stroke="url(#paint0_linear_176_1047)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M36.6668 20C36.6668 22.1888 36.2357 24.3562 35.398 26.3784C34.5604 28.4006 33.3327 30.238 31.785 31.7857C30.2373 33.3334 28.3999 34.5612 26.3777 35.3988C24.3555 36.2364 22.1881 36.6675 19.9993 36.6675C17.8105 36.6675 15.6431 36.2364 13.6209 35.3988C11.5987 34.5612 9.76131 33.3334 8.21359 31.7857C6.66586 30.238 5.43815 28.4006 4.60052 26.3784C3.7629 24.3562 3.33179 22.1888 3.33179 20C3.33179 15.5795 5.08782 11.3401 8.21359 8.21432C11.3393 5.08855 15.5788 3.33252 19.9993 3.33252C24.4198 3.33252 28.6592 5.08855 31.785 8.21432C34.9107 11.3401 36.6668 15.5795 36.6668 20Z" stroke="url(#paint1_linear_176_1047)" stroke-width="2.5"/>
+          <defs>
+          <linearGradient id="paint0_linear_176_1047" x1="36.6668" y1="20.0002" x2="3.3335" y2="20.0002" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear_176_1047" x1="36.6668" y1="20" x2="3.33179" y2="20" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#9723EA"/>
+          <stop offset="1" stop-color="#1797FF"/>
+          </linearGradient>
+          </defs>
+          </svg>          
+        <span class="num-card__value">7+</span>
+      </div>
+      <p class="num-card__label">Business Fields</p>
+    </div>
+
+  </div>
+  </div>
 </section>

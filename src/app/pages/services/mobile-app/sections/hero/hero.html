@@ -1,0 +1,48 @@
+<section class="ma-hero">
+
+  <!-- Background image + darkening overlays -->
+  <div class="ma-hero__bg" aria-hidden="true">
+    <img class="ma-hero__bg-img" src="/mobile-app-hero-bg.png" alt="" />
+    <div class="ma-hero__bg-tint"></div>
+    <div class="ma-hero__bg-vignette"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="ma-hero__inner">
+
+    <h1 class="ma-hero__headline" scrollAnimate="fade-up">
+      <span class="ma-hero__gradient-text">
+        Mobile App Development Services for Scalable and High-Performance Applications
+      </span>
+    </h1>
+
+    <p class="ma-hero__subtext" scrollAnimate="fade-up" [animDelay]="120">
+      We provide professional mobile app development services to build fast, user-friendly, and scalable applications for iOS and Android platforms.
+    </p>
+
+    <div class="ma-hero__actions" scrollAnimate="fade-up" [animDelay]="220">
+      <button class="ma-btn ma-btn--primary">Book a Strategy Session</button>
+      <button class="ma-btn ma-btn--outline">Explore Our Services</button>
+    </div>
+
+  </div>
+
+  <!-- Scroll-down chevron -->
+  <div class="ma-hero__chevron" aria-hidden="true">
+    <svg width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 4L24 22L44 4" stroke="url(#maChev1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path opacity="0.6" d="M4 20L24 38L44 20" stroke="url(#maChev2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <defs>
+        <linearGradient id="maChev1" x1="4" y1="13" x2="44" y2="13" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4CB8FF"/>
+          <stop offset="1" stop-color="#9B2FFF"/>
+        </linearGradient>
+        <linearGradient id="maChev2" x1="4" y1="29" x2="44" y2="29" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4CB8FF"/>
+          <stop offset="1" stop-color="#9B2FFF"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+</section>

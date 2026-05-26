@@ -1,0 +1,215 @@
+:host {
+  display: block;
+}
+
+.wd-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Background */
+.wd-hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: #0a0a1a;
+}
+
+.wd-hero__bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  filter: blur(2px);
+}
+
+.wd-hero__bg-tint {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 5, 30, 0.55) 0%, rgba(10, 5, 30, 0.65) 60%, rgba(10, 5, 30, 0.85) 100%);
+}
+
+.wd-hero__bg-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 0%, rgba(5, 1, 21, 0.45) 60%, rgba(5, 1, 21, 0.95) 100%);
+}
+
+/* Content */
+.wd-hero__inner {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+}
+
+.wd-hero__headline {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.wd-hero__gradient-text {
+  background: linear-gradient(90deg, #4CB8FF 0%, #9B2FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(155, 47, 255, 0.25));
+}
+
+.wd-hero__subtext {
+  font-family: 'General Sans', 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e8ecfb;
+  max-width: 680px;
+}
+
+/* Actions */
+.wd-hero__actions {
+  display: flex;
+  gap: 28px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wd-btn {
+  min-width: 260px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 40px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.wd-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.wd-btn--primary {
+  border: 1.5px solid rgba(100, 120, 255, 0.6);
+  background: linear-gradient(100deg, #1D5AF0 0%, #8E2DF5 100%);
+  box-shadow:
+    0px 0px 60px 0px rgba(30, 90, 255, 0.35),
+    0px 0px 30px 0px rgba(142, 45, 245, 0.4),
+    0px 12px 30px 0px rgba(0, 0, 0, 0.4),
+    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.18);
+}
+
+.wd-btn--outline {
+  border: 2px solid rgba(140, 80, 255, 0.85);
+  background: rgba(15, 5, 35, 0.55);
+  backdrop-filter: blur(6px);
+}
+
+/* Chevron */
+.wd-hero__chevron {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: wd-bounce 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes wd-bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 10px); }
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .wd-hero {
+    min-height: 100svh;
+    padding: 110px 20px 90px;
+  }
+
+  .wd-hero__headline {
+    font-size: 36px;
+  }
+
+  .wd-hero__subtext {
+    font-size: 17px;
+  }
+
+  .wd-hero__actions {
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .wd-btn {
+    width: min(100%, 440px);
+    min-width: 0;
+    height: 52px;
+    font-size: 16px;
+  }
+
+  .wd-hero__chevron {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wd-hero__headline {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .wd-hero__subtext {
+    font-size: 15px;
+  }
+
+  .wd-btn {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 374px) {
+  .wd-hero {
+    padding: 104px 14px 84px;
+  }
+
+  .wd-hero__headline {
+    font-size: 26px;
+  }
+
+  .wd-hero__chevron {
+    bottom: 20px;
+  }
+
+  .wd-hero__chevron svg {
+    width: 34px;
+    height: 28px;
+  }
+}

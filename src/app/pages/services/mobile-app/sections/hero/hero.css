@@ -1,0 +1,216 @@
+:host {
+  display: block;
+}
+
+.ma-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Background */
+.ma-hero__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: #0a0a1a;
+}
+
+.ma-hero__bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  filter: blur(2px);
+}
+
+.ma-hero__bg-tint {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 5, 30, 0.55) 0%, rgba(10, 5, 30, 0.65) 60%, rgba(10, 5, 30, 0.85) 100%);
+}
+
+.ma-hero__bg-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 0%, rgba(5, 1, 21, 0.45) 60%, rgba(5, 1, 21, 0.95) 100%);
+}
+
+/* Content */
+.ma-hero__inner {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+}
+
+.ma-hero__headline {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.25;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.ma-hero__gradient-text {
+  background: linear-gradient(90deg, #4CB8FF 0%, #9B2FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(155, 47, 255, 0.25));
+  animation: ambient-pulse 6s ease-in-out infinite;
+}
+
+.ma-hero__subtext {
+  font-family: 'General Sans', 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e8ecfb;
+  max-width: 720px;
+}
+
+/* Actions */
+.ma-hero__actions {
+  display: flex;
+  gap: 28px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ma-btn {
+  min-width: 260px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 40px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.ma-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.ma-btn--primary {
+  border: 1.5px solid rgba(100, 120, 255, 0.6);
+  background: linear-gradient(100deg, #1D5AF0 0%, #8E2DF5 100%);
+  box-shadow:
+    0px 0px 60px 0px rgba(30, 90, 255, 0.35),
+    0px 0px 30px 0px rgba(142, 45, 245, 0.4),
+    0px 12px 30px 0px rgba(0, 0, 0, 0.4),
+    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.18);
+}
+
+.ma-btn--outline {
+  border: 2px solid rgba(140, 80, 255, 0.85);
+  background: rgba(15, 5, 35, 0.55);
+  backdrop-filter: blur(6px);
+}
+
+/* Chevron */
+.ma-hero__chevron {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: ma-bounce 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ma-bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 10px); }
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .ma-hero {
+    min-height: 100svh;
+    padding: 110px 20px 90px;
+  }
+
+  .ma-hero__headline {
+    font-size: 36px;
+  }
+
+  .ma-hero__subtext {
+    font-size: 17px;
+  }
+
+  .ma-hero__actions {
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .ma-btn {
+    width: min(100%, 440px);
+    min-width: 0;
+    height: 52px;
+    font-size: 16px;
+  }
+
+  .ma-hero__chevron {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ma-hero__headline {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .ma-hero__subtext {
+    font-size: 15px;
+  }
+
+  .ma-btn {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 374px) {
+  .ma-hero {
+    padding: 104px 14px 84px;
+  }
+
+  .ma-hero__headline {
+    font-size: 26px;
+  }
+
+  .ma-hero__chevron {
+    bottom: 20px;
+  }
+
+  .ma-hero__chevron svg {
+    width: 34px;
+    height: 28px;
+  }
+}

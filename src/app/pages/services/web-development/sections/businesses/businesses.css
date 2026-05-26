@@ -1,0 +1,277 @@
+:host {
+  display: block;
+}
+
+.wd-businesses {
+  position: relative;
+  width: 100%;
+  padding: 90px 24px 110px;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(to bottom, #050115 0%, #07021c 50%, #050115 100%);
+}
+
+.wd-businesses::before,
+.wd-businesses::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wd-businesses::before {
+  top: 0;
+  background: linear-gradient(to bottom, #050115 0%, transparent 100%);
+}
+
+.wd-businesses::after {
+  bottom: 0;
+  background: linear-gradient(to top, #050115 0%, transparent 100%);
+}
+
+.wd-businesses__bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 1400px;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.16;
+  pointer-events: none;
+  filter: brightness(1.2);
+  animation: ambient-float 18s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+}
+
+.wd-businesses__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.wd-businesses__title {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.wd-businesses__gradient-text {
+  background: linear-gradient(90deg, #4CB8FF 0%, #9B2FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 18px rgba(155, 47, 255, 0.25));
+  animation: ambient-pulse 6s ease-in-out infinite;
+}
+
+.wd-biz-card__img {
+  transition: transform 0.6s ease;
+}
+
+.wd-biz-card:hover .wd-biz-card__img {
+  transform: scale(1.06);
+}
+
+/* Grid */
+.wd-businesses__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.wd-biz-card {
+  position: relative;
+  display: block;
+  min-height: 300px;
+  height: auto;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #1a0630;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wd-biz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(123, 63, 242, 0.25);
+}
+
+.wd-biz-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* PromptOverflow uses a logo, not a photo — contain it with padding so the full logo is visible */
+.wd-biz-card--promptoverflow {
+  background: #0B0B10;
+}
+
+.wd-biz-card--promptoverflow .wd-biz-card__img {
+  object-fit: contain;
+  padding: 70px 32px 28px;
+  background: #0B0B10;
+}
+
+.wd-biz-card__overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  gap: 14px;
+}
+
+.wd-biz-card__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wd-biz-card__logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wd-biz-card__logo--netflix {
+  background: transparent;
+  border: none;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #e50914;
+  line-height: 1;
+}
+
+.wd-biz-card__name {
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.wd-biz-card__name--gradient {
+  background: linear-gradient(to right, #9723ea, #1797ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tags */
+.wd-biz-card__tags {
+  display: flex;
+  gap: 8px;
+}
+
+.wd-biz-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(15, 10, 30, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  white-space: normal;
+}
+
+/* CTA */
+.wd-businesses__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  background: linear-gradient(to right, #9723ea, #1797ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: opacity 0.2s ease;
+}
+
+.wd-businesses__cta svg {
+  color: #1797ff;
+  -webkit-text-fill-color: initial;
+}
+
+.wd-businesses__cta:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .wd-businesses__grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wd-businesses {
+    padding: 70px 20px 90px;
+  }
+
+  .wd-businesses__title {
+    font-size: 24px;
+  }
+
+  .wd-businesses__grid {
+    max-width: 420px;
+    gap: 22px;
+  }
+
+  .wd-biz-card {
+    min-height: 280px;
+  }
+
+  .wd-biz-card__name {
+    font-size: 22px;
+  }
+
+  .wd-biz-card--promptoverflow .wd-biz-card__img {
+    padding: 56px 20px 20px;
+  }
+}
+
+@media (max-width: 374px) {
+  .wd-businesses {
+    padding: 60px 14px 72px;
+  }
+}

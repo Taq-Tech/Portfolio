@@ -1,0 +1,123 @@
+<div class="aa-page">
+
+  <!-- ── Hero ── -->
+  <section class="aa-hero">
+    <img class="aa-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="aa-hero__inner">
+
+      <a routerLink="/services/mobile-app" class="aa-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Mobile App
+      </a>
+
+      <div class="aa-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div class="aa-hero__logo">
+          <img src="/Mobile%20Development/Alpha_Academy/Alpha_Academy_Logo.jpeg" alt="Alpha Academy logo" />
+        </div>
+        <div>
+          <span class="aa-hero__domain">Education</span>
+          <h1 class="aa-hero__title">
+            <span class="aa-gradient-text">Alpha Academy</span>
+          </h1>
+          <p class="aa-hero__tagline">Educational mobile platform for Syrian students</p>
+        </div>
+      </div>
+
+      <p class="aa-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        Alpha Academy is an educational app where students in Syria can benefit from educational videos by a curated set of highly qualified teachers. Browse courses, register and take quizzes.
+      </p>
+
+      <ul class="aa-tech" scrollAnimate="fade-up" [animDelay]="260">
+        <li class="aa-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="" aria-hidden="true" />
+          <span>Flutter</span>
+        </li>
+        <li class="aa-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="" aria-hidden="true" />
+          <span>Django</span>
+        </li>
+        <li class="aa-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" aria-hidden="true" />
+          <span>PostgreSQL</span>
+        </li>
+      </ul>
+
+      <div class="aa-hero__actions" scrollAnimate="fade-up" [animDelay]="340">
+        <a href="#" class="aa-btn aa-btn--primary" target="_blank" rel="noopener">
+          Visit Project
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a routerLink="/services/mobile-app" class="aa-btn aa-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="aa-shots">
+    <div class="aa-shots__inner">
+
+      <h2 class="aa-shots__title" scrollAnimate="fade-up">
+        <span class="aa-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="aa-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        From browsing courses to taking quizzes — selected screens from the Alpha Academy app.
+      </p>
+
+      <div class="aa-shots__grid">
+        <figure class="aa-shot" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Mobile%20Development/Alpha_Academy/Login.jpeg', 'Login screen')">
+          <img src="/Mobile%20Development/Alpha_Academy/Login.jpeg" alt="Login screen" />
+          <figcaption>Login</figcaption>
+        </figure>
+
+        <figure class="aa-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Mobile%20Development/Alpha_Academy/Home.jpeg', 'Home screen')">
+          <img src="/Mobile%20Development/Alpha_Academy/Home.jpeg" alt="Home screen" />
+          <figcaption>Home & courses</figcaption>
+        </figure>
+
+        <figure class="aa-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Mobile%20Development/Alpha_Academy/Leaders.jpeg', 'Leaders screen')">
+          <img src="/Mobile%20Development/Alpha_Academy/Leaders.jpeg" alt="Leaders screen" />
+          <figcaption>Top leaders</figcaption>
+        </figure>
+
+        <figure class="aa-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Mobile%20Development/Alpha_Academy/Subscribe.jpeg', 'Subscribe screen')">
+          <img src="/Mobile%20Development/Alpha_Academy/Subscribe.jpeg" alt="Subscribe screen" />
+          <figcaption>Subscribe & enroll</figcaption>
+        </figure>
+
+        <figure class="aa-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Mobile%20Development/Alpha_Academy/Quizz.jpeg', 'Quiz screen')">
+          <img src="/Mobile%20Development/Alpha_Academy/Quizz.jpeg" alt="Quiz screen" />
+          <figcaption>Take a quiz</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="aa-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="aa-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="aa-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

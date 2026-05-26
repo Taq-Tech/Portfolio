@@ -5,14 +5,28 @@
 .projects {
   position: relative;
   width: 100%;
-  height: 800px;
+  min-height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 40px;
+  padding: 80px 40px 100px;
   overflow: hidden;
+}
+
+/* Portfolio page — content below shared hero */
+.projects--standalone {
+  height: auto;
+  min-height: unset;
+  justify-content: flex-start;
+  padding: 80px 40px 100px;
+  gap: 48px;
+}
+
+.projects--standalone .projects__bg {
+  display: none;
 }
 
 .projects__bg {
@@ -64,7 +78,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 
 .projects__subtitle {
@@ -75,26 +90,29 @@
   color: #e8ecfb;
 }
 
-/* Grid */
+/* Grid — matches service pages businesses section */
 .projects__grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 880px;
 }
 
 .project-card {
   position: relative;
-  height: 390px;
-  border-radius: 24px;
+  display: block;
+  height: 320px;
+  border-radius: 22px;
   overflow: hidden;
   background: #1a0630;
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -102,101 +120,115 @@
   box-shadow: 0 24px 50px rgba(123, 63, 242, 0.25);
 }
 
-.project-card__media {
+.project-card__img {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, #2a1454 0%, #0d0422 100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.6s ease;
 }
 
-.project-card--bmw .project-card__media {
+.project-card:hover .project-card__img {
+  transform: scale(1.06);
+}
+
+/* PromptOverflow — logo with contain */
+.project-card--promptoverflow {
+  background: #0b0b10;
+}
+
+.project-card--promptoverflow .project-card__img {
+  object-fit: contain;
+  padding: 70px 32px 28px;
+  background: #0b0b10;
+}
+
+/* Alpha Academy — logo on tinted backdrop */
+.project-card--alpha {
   background:
-    linear-gradient(to top, rgba(10, 0, 29, 0.6) 0%, rgba(10, 0, 29, 0.1) 50%),
-    linear-gradient(135deg, #1c1c1c 0%, #0a0a0a 100%);
+    radial-gradient(ellipse at 50% 60%, rgba(76, 184, 255, 0.18), transparent 55%),
+    radial-gradient(ellipse at 50% 40%, rgba(155, 47, 255, 0.14), transparent 60%),
+    linear-gradient(160deg, #1a0d3a 0%, #0a0420 100%);
 }
 
-.project-card--netflix .project-card__media {
-  background: linear-gradient(160deg, #6b0f17 0%, #2a0509 100%);
+.project-card--alpha .project-card__img {
+  object-fit: contain;
+  padding: 76px 70px 44px;
+  border-radius: 28px;
+  filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.5));
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease;
 }
 
-.project-card--minecraft .project-card__media {
-  background: linear-gradient(160deg, #3a2b1a 0%, #0d1a2b 100%);
+.project-card--alpha:hover .project-card__img {
+  transform: scale(1.04);
+  filter:
+    drop-shadow(0 22px 40px rgba(0, 0, 0, 0.55))
+    drop-shadow(0 0 30px rgba(76, 184, 255, 0.35));
 }
 
-/* Overlay layout for BMW & Minecraft (image-forward cards) */
+/* Pillpal — gradient placeholder */
+.project-card--pillpal {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(76, 184, 255, 0.18), transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(155, 47, 255, 0.22), transparent 60%),
+    linear-gradient(160deg, #1a0d3a 0%, #0a0420 100%);
+}
+
+.project-card__placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card__placeholder svg {
+  opacity: 0.55;
+  filter: drop-shadow(0 0 24px rgba(76, 184, 255, 0.35));
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.project-card--pillpal:hover .project-card__placeholder svg {
+  transform: scale(1.1) rotate(-4deg);
+}
+
 .project-card__overlay {
   position: relative;
+  z-index: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 24px;
-  gap: 16px;
-  z-index: 1;
+  padding: 22px;
+  gap: 14px;
 }
 
 .project-card__head {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
-.project-card__brand-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  flex-shrink: 0;
-}
-
-.project-card__brand-icon--netflix {
-  background: transparent;
-  border: none;
-  width: 28px;
-  height: 28px;
-  position: relative;
-}
-
-.project-card__brand-icon--netflix::before {
-  content: 'N';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Clash Display', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  color: #e50914;
-  line-height: 1;
-}
-
-.project-card__title {
+.project-card__name {
   font-family: 'Clash Display', sans-serif;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.1;
   color: #fff;
 }
 
-.project-card__title--gradient {
-  background: linear-gradient(to right, #9723ea, #1797ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Tags */
 .project-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.tag {
+.project-card__tag {
   display: inline-flex;
   align-items: center;
-  padding: 6px 14px;
+  padding: 6px 16px;
   border-radius: 999px;
   background: rgba(15, 10, 30, 0.75);
   backdrop-filter: blur(8px);
@@ -205,59 +237,7 @@
   font-weight: 500;
   font-size: 13px;
   color: #fff;
-  white-space: nowrap;
-}
-
-.tag--solid {
-  background: #0a0a1a;
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-/* Netflix content layout (text-forward) */
-.project-card__content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  gap: 14px;
-  z-index: 1;
-}
-
-.project-card__body {
-  font-family: 'General Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.project-card__mockups {
-  flex: 1;
-  min-height: 120px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px dashed rgba(255, 255, 255, 0.08);
-}
-
-.project-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'Clash Display', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  background: linear-gradient(to right, #9723ea, #1797ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  align-self: center;
-}
-
-.project-card__link svg {
-  color: #1797ff;
-  -webkit-text-fill-color: initial;
+  white-space: normal;
 }
 
 /* See Case Studies CTA */
@@ -287,24 +267,27 @@
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .projects {
     height: auto;
     padding: 60px 24px;
   }
 
-  .projects__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 760px;
+  .projects--standalone {
+    padding: 60px 24px 80px;
   }
 
-  .project-card--minecraft {
-    grid-column: 1 / -1;
-    height: 320px;
+  .projects__grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
+
+  .project-card--alpha .project-card__img {
+    padding: 54px 36px 28px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .projects {
     padding: 60px 20px;
     gap: 36px;
@@ -321,17 +304,40 @@
   }
 
   .projects__grid {
-    grid-template-columns: 1fr;
     max-width: 420px;
-    gap: 24px;
+    gap: 22px;
   }
 
-  .project-card,
-  .project-card--minecraft {
-    height: 380px;
+  .project-card {
+    height: 300px;
   }
 
-  .project-card__title {
-    font-size: 24px;
+  .project-card__name {
+    font-size: 22px;
+  }
+
+  .project-card--promptoverflow .project-card__img {
+    padding: 56px 20px 20px;
+  }
+
+  .project-card--alpha .project-card__img {
+    padding: 42px 24px 22px;
+  }
+}
+
+@media (max-width: 374px) {
+  .projects,
+  .projects--standalone {
+    padding: 52px 14px 70px;
+  }
+
+  .project-card {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects__grid {
+    max-width: 880px;
   }
 }
