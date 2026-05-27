@@ -1,0 +1,286 @@
+<div class="sms-page">
+
+  <!-- ── Hero ── -->
+  <section class="sms-hero">
+    <img class="sms-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="sms-hero__inner">
+
+      <a routerLink="/services/web-development" class="sms-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="sms-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div class="sms-hero__logo">
+          <svg viewBox="0 0 120 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="smsHeroStroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4CB8FF"/>
+                <stop offset="100%" stop-color="#9B2FFF"/>
+              </linearGradient>
+              <linearGradient id="smsHeroCap" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1D5AF0"/>
+                <stop offset="100%" stop-color="#8E2DF5"/>
+              </linearGradient>
+            </defs>
+            <path d="M60 12 L112 38 L60 64 L8 38 Z" fill="url(#smsHeroCap)" stroke="url(#smsHeroStroke)" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="60" cy="38" r="3" fill="#0e0a28"/>
+            <path d="M60 38 L94 54 L94 80" stroke="url(#smsHeroStroke)" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="94" cy="84" r="5" fill="url(#smsHeroStroke)"/>
+            <path d="M30 50 L60 65 L90 50 L90 76 Q60 90 30 76 Z" fill="#0e0a28" stroke="url(#smsHeroStroke)" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M30 76 Q60 90 90 76" fill="none" stroke="url(#smsHeroStroke)" stroke-width="1" opacity="0.45"/>
+          </svg>
+        </div>
+        <div>
+          <span class="sms-hero__domain">Education Management</span>
+          <h1 class="sms-hero__title">
+            <span class="sms-gradient-text">School Management System</span>
+          </h1>
+          <p class="sms-hero__tagline">Multi-role operations platform for educational institutions</p>
+        </div>
+      </div>
+
+      <p class="sms-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        A comprehensive Laravel platform that digitizes the daily operations of schools and academies. Four role-tailored dashboards — Administration, Teachers, Students, and Parents — coordinate the full academic, examination, attendance, and financial lifecycle within a fully bilingual workspace that supports both Arabic and English with native right-to-left and left-to-right layouts.
+      </p>
+
+      <ul class="sms-features" scrollAnimate="fade-up" [animDelay]="220">
+        <li class="sms-features__item">Four role-based dashboards purpose-built for administrators, teachers, students, and parents, each surfacing only the views and actions relevant to its audience.</li>
+        <li class="sms-features__item">Complete academic hierarchy management covering grades, classes, sections, subjects, teachers, and students within a unified institutional directory.</li>
+        <li class="sms-features__item">Attendance tracking with daily registration, per-section breakdowns, and consolidated reporting for administrators, teachers, and parents.</li>
+        <li class="sms-features__item">Integrated examination engine with quiz authoring, reusable question banks, automated scoring, and per-student degree records.</li>
+        <li class="sms-features__item">End-to-end finance module spanning fee schedules, student invoices, receipts, processing charges, and reconciled student and fund accounts.</li>
+        <li class="sms-features__item">Parent portal that mirrors academic progress and attendance across every enrolled child in a single consolidated view.</li>
+        <li class="sms-features__item">Live online classes with meeting integration, scheduling, and direct join links for students and teachers.</li>
+        <li class="sms-features__item">Student promotion workflow with a historical ledger of academic-year transitions.</li>
+        <li class="sms-features__item">Library catalogue scoped by grade, classroom, section, and assigning teacher.</li>
+        <li class="sms-features__item">Configurable institution settings — academic session, term boundaries, school identity, contact details, and logo — managed from a single screen.</li>
+        <li class="sms-features__item">Full bilingual interface with Arabic and English localization and seamless RTL/LTR switching.</li>
+      </ul>
+
+      <ul class="sms-tech" scrollAnimate="fade-up" [animDelay]="300">
+        <li class="sms-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="" aria-hidden="true" />
+          <span>Laravel Blade</span>
+        </li>
+        <li class="sms-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" aria-hidden="true" />
+          <span>MySQL</span>
+        </li>
+      </ul>
+
+      <div class="sms-hero__actions" scrollAnimate="fade-up" [animDelay]="380">
+        <a routerLink="/services/web-development" class="sms-btn sms-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Four Role-Based Dashboards ── -->
+  <section class="sms-roles">
+    <div class="sms-roles__inner">
+
+      <h2 class="sms-roles__title" scrollAnimate="fade-up">
+        <span class="sms-gradient-text">One Platform, Four Experiences</span>
+      </h2>
+      <p class="sms-roles__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Every stakeholder in the school community gets a workspace tailored to their responsibilities — backed by a single shared data model.
+      </p>
+
+      <div class="sms-roles__grid">
+
+        <article class="sms-role" scrollAnimate="fade-up" [animDelay]="120">
+          <figure class="sms-role__shot"
+                  (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Dashboard.PNG', 'Admin dashboard')">
+            <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Dashboard.PNG" alt="Admin dashboard" />
+          </figure>
+          <div class="sms-role__body">
+            <span class="sms-role__tag">Administrator</span>
+            <h3 class="sms-role__name">Operational Nerve Center</h3>
+            <p class="sms-role__desc">Manage the full academic hierarchy, finance, attendance, examinations, promotions, and institution-wide settings from one workspace.</p>
+          </div>
+        </article>
+
+        <article class="sms-role" scrollAnimate="fade-up" [animDelay]="200">
+          <figure class="sms-role__shot"
+                  (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Sections.PNG', 'Teacher sections view')">
+            <img src="/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Sections.PNG" alt="Teacher sections" />
+          </figure>
+          <div class="sms-role__body">
+            <span class="sms-role__tag">Teacher</span>
+            <h3 class="sms-role__name">Classroom-Focused Workspace</h3>
+            <p class="sms-role__desc">Manage assigned sections, build quizzes and question banks, mark attendance, and review student performance.</p>
+          </div>
+        </article>
+
+        <article class="sms-role" scrollAnimate="fade-up" [animDelay]="280">
+          <figure class="sms-role__shot"
+                  (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Student%20Dashboard/Dashboard.PNG', 'Student dashboard')">
+            <img src="/Web%20Development/SchoolManagementSystem/Student%20Dashboard/Dashboard.PNG" alt="Student dashboard" />
+          </figure>
+          <div class="sms-role__body">
+            <span class="sms-role__tag">Student</span>
+            <h3 class="sms-role__name">Personalized Academic Hub</h3>
+            <p class="sms-role__desc">Track classes, take scheduled quizzes, and review academic standing in a focused, distraction-free interface.</p>
+          </div>
+        </article>
+
+        <article class="sms-role" scrollAnimate="fade-up" [animDelay]="360">
+          <figure class="sms-role__shot"
+                  (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Dashboard.PNG', 'Parent dashboard')">
+            <img src="/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Dashboard.PNG" alt="Parent dashboard" />
+          </figure>
+          <div class="sms-role__body">
+            <span class="sms-role__tag">Parent</span>
+            <h3 class="sms-role__name">Family Overview Portal</h3>
+            <p class="sms-role__desc">Monitor each enrolled child's attendance and academic activity in one consolidated, family-wide view.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Closer Look Gallery ── -->
+  <section class="sms-shots">
+    <div class="sms-shots__inner">
+
+      <h2 class="sms-shots__title" scrollAnimate="fade-up">
+        <span class="sms-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="sms-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens spanning login, scheduling, academic records, financial operations, examinations, and bilingual interface.
+      </p>
+
+      <div class="sms-shots__grid">
+
+        <figure class="sms-shot sms-shot--half" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Login.PNG', 'Login screen')">
+          <img src="/Web%20Development/SchoolManagementSystem/Login.PNG" alt="Login screen" />
+          <figcaption>Staff login</figcaption>
+        </figure>
+
+        <figure class="sms-shot sms-shot--half" scrollAnimate="fade-up" [animDelay]="130"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Student%20Login.PNG', 'Student login')">
+          <img src="/Web%20Development/SchoolManagementSystem/Student%20Login.PNG" alt="Student login" />
+          <figcaption>Student login</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Dashboard%20Calander.PNG', 'Calendar view')">
+          <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Dashboard%20Calander.PNG" alt="Calendar" />
+          <figcaption>School calendar</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Students%20list.PNG', 'Students list')">
+          <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Students%20list.PNG" alt="Students list" />
+          <figcaption>Students directory</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Attendance.PNG', 'Attendance')">
+          <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Attendance.PNG" alt="Attendance" />
+          <figcaption>Attendance management</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Fee.PNG', 'Fees')">
+          <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/Fee.PNG" alt="Fees" />
+          <figcaption>Fee schedules</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="400"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Questions%20List.PNG', 'Question bank')">
+          <img src="/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Questions%20List.PNG" alt="Question bank" />
+          <figcaption>Teacher: question bank</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="460"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Attendance%20Report%20Results.PNG', 'Attendance results')">
+          <img src="/Web%20Development/SchoolManagementSystem/Teacher%20Dashboard/Attendance%20Report%20Results.PNG" alt="Attendance results" />
+          <figcaption>Teacher: attendance report</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="520"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Student%20Dashboard/Quiz.PNG', 'Quiz interface')">
+          <img src="/Web%20Development/SchoolManagementSystem/Student%20Dashboard/Quiz.PNG" alt="Quiz" />
+          <figcaption>Student: taking a quiz</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="580"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Sons%20List.PNG', 'Sons list')">
+          <img src="/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Sons%20List.PNG" alt="Sons list" />
+          <figcaption>Parent: enrolled children</figcaption>
+        </figure>
+
+        <figure class="sms-shot" scrollAnimate="fade-up" [animDelay]="640"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Attendance%20Report.PNG', 'Parent attendance report')">
+          <img src="/Web%20Development/SchoolManagementSystem/Parents%20Dashboard/Attendance%20Report.PNG" alt="Parent attendance report" />
+          <figcaption>Parent: attendance report</figcaption>
+        </figure>
+
+        <figure class="sms-shot sms-shot--wide" scrollAnimate="fade-up" [animDelay]="700"
+                (click)="openLightbox('/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/%D9%84%D9%88%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85.PNG', 'Arabic dashboard')">
+          <img src="/Web%20Development/SchoolManagementSystem/Admin%20Dashboard/%D9%84%D9%88%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85.PNG" alt="Arabic dashboard" />
+          <figcaption>Arabic localization (RTL)</figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Mind-Map ── -->
+  <section class="sms-mindmap">
+    <div class="sms-mindmap__inner">
+
+      <h2 class="sms-mindmap__title" scrollAnimate="fade-up">
+        <span class="sms-gradient-text">System Architecture at a Glance</span>
+      </h2>
+      <p class="sms-mindmap__sub" scrollAnimate="fade-up" [animDelay]="80">
+        A high-level mind-map of the system's data model and module relationships — produced during the design phase to align scope and ownership across the academic, examination, attendance, and financial layers of the platform.
+      </p>
+
+      <div class="sms-mindmap__frame" scrollAnimate="fade-up" [animDelay]="160">
+        <iframe
+          class="sms-mindmap__iframe"
+          src="/Web%20Development/SchoolManagementSystem/School%20Management%20System%20Mind-Map.pdf#zoom=page-width&toolbar=0&navpanes=0"
+          title="School Management System Mind-Map"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <a href="/Web%20Development/SchoolManagementSystem/School%20Management%20System%20Mind-Map.pdf"
+         target="_blank" rel="noopener noreferrer"
+         class="sms-mindmap__cta" scrollAnimate="fade-up" [animDelay]="220">
+        Open Full Mind-Map
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="sms-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="sms-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="sms-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

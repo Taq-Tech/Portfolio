@@ -1,0 +1,145 @@
+<div class="is-page">
+
+  <!-- ── Hero ── -->
+  <section class="is-hero">
+    <img class="is-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="is-hero__inner">
+
+      <a routerLink="/services/web-development" class="is-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="is-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div class="is-hero__logo">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 2H15L20 7V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20V4C4 2.9 4.9 2 6 2Z" stroke="#1D5AF0" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M14 2V8H20" stroke="#1D5AF0" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M8 12H16M8 16H16M8 8H10" stroke="#8E2DF5" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="is-hero__domain">Finance & Debt Collection</span>
+          <h1 class="is-hero__title">
+            <span class="is-gradient-text">Invoices Management System</span>
+          </h1>
+          <p class="is-hero__tagline">Admin dashboard for debt collection companies</p>
+        </div>
+      </div>
+
+      <p class="is-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        An enterprise administration platform built with Laravel for debt collection agencies that recover outstanding receivables on behalf of banking institutions and issue the corresponding invoices. Delivered as a fully Arabic-localized workspace, the system consolidates invoice operations, banking partners, service catalogues, analytics, role-based access control, and real-time notifications into a single, governed environment.
+      </p>
+
+      <ul class="is-features" scrollAnimate="fade-up" [animDelay]="220">
+        <li class="is-features__item">Executive overview surfacing aggregate invoice statistics and key performance indicators in real time.</li>
+        <li class="is-features__item">Comprehensive invoice lifecycle management — create, review, modify, archive, print, and reconcile payment status across paid, unpaid, and partially settled invoices.</li>
+        <li class="is-features__item">Banking partner directory with full CRUD operations to onboard and maintain affiliated institutions.</li>
+        <li class="is-features__item">Service catalogue module for administering the offerings provided by each banking partner.</li>
+        <li class="is-features__item">Advanced reporting suite with multi-criteria search across invoice type, reference number, transaction date, and originating department.</li>
+        <li class="is-features__item">Role-based access control with granular permission assignment, per-user authorization management, and account activation toggles.</li>
+        <li class="is-features__item">Real-time notification centre that alerts authorized users the moment new invoices are registered in the system.</li>
+      </ul>
+
+      <ul class="is-tech" scrollAnimate="fade-up" [animDelay]="300">
+        <li class="is-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="" aria-hidden="true" />
+          <span>Laravel Blade</span>
+        </li>
+        <li class="is-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" aria-hidden="true" />
+          <span>MySQL</span>
+        </li>
+      </ul>
+
+      <div class="is-hero__actions" scrollAnimate="fade-up" [animDelay]="380">
+        <a routerLink="/services/web-development" class="is-btn is-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="is-shots">
+    <div class="is-shots__inner">
+
+      <h2 class="is-shots__title" scrollAnimate="fade-up">
+        <span class="is-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="is-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens from the dashboard — from login and analytics to invoice operations and reporting.
+      </p>
+
+      <div class="is-shots__grid">
+        <figure class="is-shot is-shot--wide" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Home.PNG', 'Home dashboard')">
+          <img src="/Web%20Development/InvoicesSystem/Home.PNG" alt="Home dashboard" />
+          <figcaption>Dashboard overview</figcaption>
+        </figure>
+
+        <figure class="is-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Invoices.PNG', 'Invoices list')">
+          <img src="/Web%20Development/InvoicesSystem/Invoices.PNG" alt="Invoices list" />
+          <figcaption>Invoices management</figcaption>
+        </figure>
+
+        <figure class="is-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Add%20invoice.PNG', 'Add invoice')">
+          <img src="/Web%20Development/InvoicesSystem/Add%20invoice.PNG" alt="Add invoice" />
+          <figcaption>Add a new invoice</figcaption>
+        </figure>
+
+        <figure class="is-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Invoice%20Details%201.PNG', 'Invoice details')">
+          <img src="/Web%20Development/InvoicesSystem/Invoice%20Details%201.PNG" alt="Invoice details" />
+          <figcaption>Invoice details</figcaption>
+        </figure>
+
+        <figure class="is-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Reports.PNG', 'Reports')">
+          <img src="/Web%20Development/InvoicesSystem/Reports.PNG" alt="Reports" />
+          <figcaption>Reports & search</figcaption>
+        </figure>
+
+        <figure class="is-shot" scrollAnimate="fade-up" [animDelay]="400"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Clients%20Reports.PNG', 'Clients reports')">
+          <img src="/Web%20Development/InvoicesSystem/Clients%20Reports.PNG" alt="Clients reports" />
+          <figcaption>Clients reports</figcaption>
+        </figure>
+
+        <figure class="is-shot is-shot--narrow" scrollAnimate="fade-up" [animDelay]="460"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Login.PNG', 'Login screen')">
+          <img src="/Web%20Development/InvoicesSystem/Login.PNG" alt="Login screen" />
+          <figcaption>Login screen</figcaption>
+        </figure>
+
+        <figure class="is-shot is-shot--narrow" scrollAnimate="fade-up" [animDelay]="520"
+                (click)="openLightbox('/Web%20Development/InvoicesSystem/Conceptual%20Diagram.PNG', 'Conceptual diagram')">
+          <img src="/Web%20Development/InvoicesSystem/Conceptual%20Diagram.PNG" alt="Conceptual diagram" />
+          <figcaption>Conceptual diagram</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="is-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="is-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="is-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

@@ -44,6 +44,16 @@ export const routes: Routes = [
       import('./pages/services/web-development/projects/promptoverflow/promptoverflow').then(m => m.PromptOverflowProjectPage),
   },
   {
+    path: 'services/web-development/invoices-system',
+    loadComponent: () =>
+      import('./pages/services/web-development/projects/invoices-system/invoices-system').then(m => m.InvoicesSystemProjectPage),
+  },
+  {
+    path: 'services/web-development/school-management-system',
+    loadComponent: () =>
+      import('./pages/services/web-development/projects/school-management-system/school-management-system').then(m => m.SchoolManagementSystemProjectPage),
+  },
+  {
     path: '**',
     redirectTo: '',
   },
