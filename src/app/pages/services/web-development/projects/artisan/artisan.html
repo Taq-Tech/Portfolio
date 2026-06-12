@@ -1,0 +1,135 @@
+<div class="ar-page">
+
+  <!-- ── Hero ── -->
+  <section class="ar-hero">
+    <img class="ar-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="ar-hero__inner">
+
+      <a routerLink="/services/web-development" class="ar-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="ar-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div>
+          <span class="ar-hero__domain">Handmade Marketplace</span>
+          <h1 class="ar-hero__title">
+            <span class="ar-gradient-text">Artisan</span>
+          </h1>
+          <p class="ar-hero__tagline">Every Piece Tells a Story</p>
+        </div>
+      </div>
+
+      <p class="ar-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        Artisan is a marketplace that gathers talented Syrian craftspeople in one place — from pottery, ceramics and home-made preserves to embroidery, woodwork, Aleppo soap and 3D printing. Makers showcase their work and reach customers across the country, while buyers browse crafts by category, agree with the artisan directly over WhatsApp, and pay cash on delivery. Listing a product takes just three simple steps — if you can post a photo on Instagram, you're ready to sell.
+      </p>
+
+      <ul class="ar-tech" scrollAnimate="fade-up" [animDelay]="260">
+        <li class="ar-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" aria-hidden="true" />
+          <span>Angular</span>
+        </li>
+        <li class="ar-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" aria-hidden="true" />
+          <span>Spring Boot</span>
+        </li>
+        <li class="ar-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" aria-hidden="true" />
+          <span>PostgreSQL</span>
+        </li>
+      </ul>
+
+      <div class="ar-hero__actions" scrollAnimate="fade-up" [animDelay]="340">
+        <a routerLink="/services/web-development" class="ar-btn ar-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Highlights ── -->
+  <section class="ar-feats">
+    <div class="ar-feats__inner">
+      <h2 class="ar-feats__title" scrollAnimate="fade-up">
+        <span class="ar-gradient-text">What We Built</span>
+      </h2>
+      <div class="ar-feats__grid">
+        <article class="ar-feat" scrollAnimate="fade-up" [animDelay]="100">
+          <h3 class="ar-feat__name">Multi-Vendor Marketplace</h3>
+          <p class="ar-feat__desc">Every artisan gets their own storefront to showcase and sell handmade goods to customers nationwide.</p>
+        </article>
+        <article class="ar-feat" scrollAnimate="fade-up" [animDelay]="160">
+          <h3 class="ar-feat__name">Browse by Craft</h3>
+          <p class="ar-feat__desc">Curated categories — pottery &amp; ceramics, embroidery &amp; textiles, home preserves, Aleppo soap, woodwork, 3D printing and more.</p>
+        </article>
+        <article class="ar-feat" scrollAnimate="fade-up" [animDelay]="220">
+          <h3 class="ar-feat__name">Effortless Seller Onboarding</h3>
+          <p class="ar-feat__desc">If you can post a photo on Instagram, you're ready. Just three simple steps separate your work from your first customer.</p>
+        </article>
+        <article class="ar-feat" scrollAnimate="fade-up" [animDelay]="280">
+          <h3 class="ar-feat__name">WhatsApp Orders &amp; Cash on Delivery</h3>
+          <p class="ar-feat__desc">Buyers agree directly with the maker over WhatsApp and pay on delivery — a market that feels personal and local.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="ar-shots">
+    <div class="ar-shots__inner">
+
+      <h2 class="ar-shots__title" scrollAnimate="fade-up">
+        <span class="ar-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="ar-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens from the platform — from the landing experience to discovering crafts and selling in three steps.
+      </p>
+
+      <div class="ar-shots__grid">
+        <figure class="ar-shot ar-shot--wide" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/Artisan/Hero.jpg', 'Artisan homepage hero')">
+          <img src="/Web%20Development/Artisan/Hero.jpg" alt="Artisan homepage hero" />
+          <figcaption>Homepage hero</figcaption>
+        </figure>
+
+        <figure class="ar-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/Artisan/Expolre.jpg', 'Discover crafts by category')">
+          <img src="/Web%20Development/Artisan/Expolre.jpg" alt="Discover crafts by category" />
+          <figcaption>Discover crafts</figcaption>
+        </figure>
+
+        <figure class="ar-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/Artisan/List.jpg', 'Selling in three steps')">
+          <img src="/Web%20Development/Artisan/List.jpg" alt="Selling in three steps" />
+          <figcaption>Sell in three steps</figcaption>
+        </figure>
+
+        <figure class="ar-shot ar-shot--wide" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/Artisan/Why.jpg', 'Why Artisan')">
+          <img src="/Web%20Development/Artisan/Why.jpg" alt="Why Artisan" />
+          <figcaption>Why Artisan</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="ar-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="ar-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="ar-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

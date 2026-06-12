@@ -274,6 +274,56 @@
   transform: translateY(-4px) scale(1.05);
 }
 
+/* TEDx AlQassaa — wordmark logo on black (no photo) */
+.wd-biz-card--tedx {
+  background: #000;
+}
+
+.wd-biz-card__art--tedx {
+  padding: 22px;
+}
+
+.wd-tedx-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: 'Clash Display', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(30px, 7vw, 46px);
+  line-height: 1;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.wd-tedx-logo__ted {
+  position: relative;
+  color: #e62b1e;
+}
+
+.wd-tedx-logo__x {
+  font-size: 0.5em;
+  font-weight: 700;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
+.wd-tedx-logo__name {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Selene — crescent logo on a cozy purple backdrop */
+.wd-biz-card--selene {
+  background:
+    radial-gradient(120% 90% at 50% 30%, rgba(155, 47, 255, 0.28) 0%, transparent 60%),
+    linear-gradient(160deg, #1b0f3a 0%, #2a1152 55%, #0d0622 100%);
+}
+
+.wd-biz-card--selene .wd-biz-card__img {
+  object-fit: contain;
+  padding: 54px 32px 70px;
+}
+
 /* School Management System — same illustrated-cover pattern */
 .wd-biz-card--sms {
   background:

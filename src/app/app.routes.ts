@@ -54,6 +54,21 @@ export const routes: Routes = [
       import('./pages/services/web-development/projects/school-management-system/school-management-system').then(m => m.SchoolManagementSystemProjectPage),
   },
   {
+    path: 'services/web-development/tedx-alqassaa',
+    loadComponent: () =>
+      import('./pages/services/web-development/projects/tedx-alqassaa/tedx-alqassaa').then(m => m.TedxAlQassaaProjectPage),
+  },
+  {
+    path: 'services/web-development/artisan',
+    loadComponent: () =>
+      import('./pages/services/web-development/projects/artisan/artisan').then(m => m.ArtisanProjectPage),
+  },
+  {
+    path: 'services/web-development/selene',
+    loadComponent: () =>
+      import('./pages/services/web-development/projects/selene/selene').then(m => m.SeleneProjectPage),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

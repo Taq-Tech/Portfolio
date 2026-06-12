@@ -266,20 +266,58 @@
   <div class="timeline">
     <!-- Curved S-line -->
     <svg class="timeline__curve" viewBox="0 0 200 1000" preserveAspectRatio="none" fill="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="timelineProgress" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1797FF"/>
+          <stop offset="100%" stop-color="#9723EA"/>
+        </linearGradient>
+
+        <!-- Mask that reveals the dashed gradient progressively on scroll -->
+        <mask id="timelineReveal">
+          <path class="timeline__reveal"
+                pathLength="1"
+                d="M 100,0
+                   C 170,0   170,70  100,110
+                   C 30,150  30,320  100,370
+                   C 170,420 170,590 100,630
+                   C 30,670  30,850  100,890
+                   C 170,930 170,1000 100,1000"
+                stroke="#fff"
+                stroke-width="8"
+                fill="none"
+                vector-effect="non-scaling-stroke"/>
+        </mask>
+      </defs>
+
+      <!-- Faint dashed track -->
       <path d="M 100,0
                C 170,0   170,70  100,110
                C 30,150  30,320  100,370
                C 170,420 170,590 100,630
                C 30,670  30,850  100,890
                C 170,930 170,1000 100,1000"
-            stroke="rgba(150, 100, 255, 0.3)"
+            stroke="rgba(150, 100, 255, 0.28)"
             stroke-width="2.5"
             stroke-dasharray="10 8"
             vector-effect="non-scaling-stroke"/>
+
+      <!-- Dashed gradient line, revealed by the scroll-driven mask -->
+      <path class="timeline__progress"
+            d="M 100,0
+               C 170,0   170,70  100,110
+               C 30,150  30,320  100,370
+               C 170,420 170,590 100,630
+               C 30,670  30,850  100,890
+               C 170,930 170,1000 100,1000"
+            stroke="url(#timelineProgress)"
+            stroke-width="2.5"
+            stroke-dasharray="10 8"
+            vector-effect="non-scaling-stroke"
+            mask="url(#timelineReveal)"/>
     </svg>
 
     <!-- Step 1 · Strategy → text left, image right -->
-    <div class="process-step" scrollAnimate="fade-up">
+    <div class="process-step" scrollAnimate="fade-in">
       <div class="process-step__text">
         <span class="process-step__num">1</span>
         <h3 class="process-step__title">Strategy</h3>
@@ -298,7 +336,7 @@
     </div>
 
     <!-- Step 2 · Design → image left, text right -->
-    <div class="process-step" scrollAnimate="fade-up" [animDelay]="100">
+    <div class="process-step" scrollAnimate="fade-in">
       <div class="process-step__image">
         <img class="process-img" src="/process2.png" alt="Design" />
       </div>
@@ -317,7 +355,7 @@
     </div>
 
     <!-- Step 3 · Development → text left, image right -->
-    <div class="process-step" scrollAnimate="fade-up" [animDelay]="200">
+    <div class="process-step" scrollAnimate="fade-in">
       <div class="process-step__text">
         <span class="process-step__num">3</span>
         <h3 class="process-step__title">Development</h3>
@@ -336,7 +374,7 @@
     </div>
 
     <!-- Step 4 · Launch & Scale → image left, text right -->
-    <div class="process-step" scrollAnimate="fade-up" [animDelay]="300">
+    <div class="process-step" scrollAnimate="fade-in">
       <div class="process-step__image">
         <img class="process-img" src="/process4.png" alt="Launch & Scale" />
       </div>

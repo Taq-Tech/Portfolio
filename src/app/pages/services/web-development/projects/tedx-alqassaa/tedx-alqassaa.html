@@ -1,0 +1,151 @@
+<div class="tx-page">
+
+  <!-- ── Hero ── -->
+  <section class="tx-hero">
+    <img class="tx-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="tx-hero__inner">
+
+      <a routerLink="/services/web-development" class="tx-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="tx-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div>
+          <span class="tx-hero__domain">Events & Community Platform</span>
+          <h1 class="tx-hero__title">
+            <span class="tx-gradient-text">TEDx AlQassaa</span>
+          </h1>
+          <p class="tx-hero__tagline">Where Ideas Ignite and Innovations Unfold</p>
+        </div>
+      </div>
+
+      <p class="tx-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        The official platform for TEDx AlQassaa — an independently organized TED event held in Damascus, Syria, that brings the community together to share ideas worth spreading. The website showcases events, featured speakers, the organizing team and sponsors, lets attendees verify their attendance and download digital certificates, and publishes a blog and the rules of attending. We also enhanced the CMS (Content Management System) Dashboard so the team can manage events, speakers, certificates and content end-to-end without touching code.
+      </p>
+
+      <ul class="tx-tech" scrollAnimate="fade-up" [animDelay]="260">
+        <li class="tx-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" aria-hidden="true" />
+          <span>Angular</span>
+        </li>
+        <li class="tx-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="" aria-hidden="true" />
+          <span>Nest.js</span>
+        </li>
+        <li class="tx-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" aria-hidden="true" />
+          <span>MongoDB</span>
+        </li>
+        <li class="tx-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="" aria-hidden="true" />
+          <span>Next.js</span>
+        </li>
+      </ul>
+
+      <div class="tx-hero__actions" scrollAnimate="fade-up" [animDelay]="340">
+        <a routerLink="/services/web-development" class="tx-btn tx-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Highlights ── -->
+  <section class="tx-feats">
+    <div class="tx-feats__inner">
+      <h2 class="tx-feats__title" scrollAnimate="fade-up">
+        <span class="tx-gradient-text">What We Built</span>
+      </h2>
+      <div class="tx-feats__grid">
+        <article class="tx-feat" scrollAnimate="fade-up" [animDelay]="100">
+          <h3 class="tx-feat__name">Events &amp; Speakers</h3>
+          <p class="tx-feat__desc">Dynamic listings for every edition and salon, with featured speakers, talks and session details.</p>
+        </article>
+        <article class="tx-feat" scrollAnimate="fade-up" [animDelay]="160">
+          <h3 class="tx-feat__name">Certificate Verification</h3>
+          <p class="tx-feat__desc">Attendees verify their attendance by email and event year, then download their digital certificate.</p>
+        </article>
+        <article class="tx-feat" scrollAnimate="fade-up" [animDelay]="220">
+          <h3 class="tx-feat__name">Blog, Team &amp; Sponsors</h3>
+          <p class="tx-feat__desc">Editorial content, organizer and team profiles, sponsor showcases and the rules of attending.</p>
+        </article>
+        <article class="tx-feat" scrollAnimate="fade-up" [animDelay]="280">
+          <h3 class="tx-feat__name">Enhanced CMS Dashboard</h3>
+          <p class="tx-feat__desc">An upgraded Content Management System that lets the team manage events, speakers, certificates and pages without code.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="tx-shots">
+    <div class="tx-shots__inner">
+
+      <h2 class="tx-shots__title" scrollAnimate="fade-up">
+        <span class="tx-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="tx-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens from the platform — from the event lineup to certificate verification.
+      </p>
+
+      <div class="tx-shots__grid">
+        <figure class="tx-shot tx-shot--wide" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/Rules1.png', 'TEDx AlQassaa team on stage')">
+          <img src="/Web%20Development/TEDxAlQassaa/Rules1.png" alt="TEDx AlQassaa team on stage" />
+          <figcaption>TEDx AlQassaa stage</figcaption>
+        </figure>
+
+        <figure class="tx-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/Events.png', 'Events screen')">
+          <img src="/Web%20Development/TEDxAlQassaa/Events.png" alt="Events screen" />
+          <figcaption>Events &amp; editions</figcaption>
+        </figure>
+
+        <figure class="tx-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/Speaker.png', 'Featured speakers screen')">
+          <img src="/Web%20Development/TEDxAlQassaa/Speaker.png" alt="Featured speakers screen" />
+          <figcaption>Featured speakers</figcaption>
+        </figure>
+
+        <figure class="tx-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/Certificate.png', 'Certificate verification screen')">
+          <img src="/Web%20Development/TEDxAlQassaa/Certificate.png" alt="Certificate verification screen" />
+          <figcaption>Certificate verification</figcaption>
+        </figure>
+
+        <figure class="tx-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/About.png', 'About TEDx screen')">
+          <img src="/Web%20Development/TEDxAlQassaa/About.png" alt="About TEDx screen" />
+          <figcaption>About TEDx</figcaption>
+        </figure>
+
+        <figure class="tx-shot tx-shot--wide" scrollAnimate="fade-up" [animDelay]="400"
+                (click)="openLightbox('/Web%20Development/TEDxAlQassaa/Rules.png', 'Rules of attending screen')">
+          <img src="/Web%20Development/TEDxAlQassaa/Rules.png" alt="Rules of attending screen" />
+          <figcaption>Rules of attending</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="tx-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="tx-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="tx-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>

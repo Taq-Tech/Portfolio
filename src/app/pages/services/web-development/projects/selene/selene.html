@@ -1,0 +1,211 @@
+<div class="sl-page">
+
+  <!-- ── Hero ── -->
+  <section class="sl-hero">
+    <img class="sl-hero__bg" src="/about-hero-bg.png" alt="" aria-hidden="true" />
+
+    <div class="sl-hero__inner">
+
+      <a routerLink="/services/web-development" class="sl-back" scrollAnimate="fade-up">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.25 4.5L6.75 9L11.25 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Web Development
+      </a>
+
+      <div class="sl-hero__head" scrollAnimate="fade-up" [animDelay]="80">
+        <div>
+          <span class="sl-hero__domain">Desktop Productivity Suite</span>
+          <h1 class="sl-hero__title">
+            <span class="sl-gradient-text">Selene</span>
+          </h1>
+          <p class="sl-hero__tagline">Pretty tools that actually help you get things done</p>
+        </div>
+      </div>
+
+      <p class="sl-hero__intro" scrollAnimate="fade-up" [animDelay]="180">
+        Selene is a small suite of cozy productivity apps designed to feel good to use while keeping you focused. It brings together three little tools made with care — <strong>Ember</strong>, a Pomodoro focus timer with a living pixel-art flame; <strong>Lumina</strong>, a no-account Kanban task tracker; and <strong>Fable</strong>, a private journal &amp; notes app. Every app runs fully offline, installs as a lightweight desktop app, and keeps all of your data on your own device.
+      </p>
+
+      <ul class="sl-tech" scrollAnimate="fade-up" [animDelay]="260">
+        <li class="sl-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" aria-hidden="true" />
+          <span>Angular</span>
+        </li>
+        <li class="sl-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tauri/tauri-original.svg" alt="" aria-hidden="true" />
+          <span>Tauri</span>
+        </li>
+        <li class="sl-tech__item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="" aria-hidden="true" />
+          <span>SQLite</span>
+        </li>
+      </ul>
+
+      <div class="sl-hero__actions" scrollAnimate="fade-up" [animDelay]="340">
+        <a href="https://selene-landing-woad.vercel.app/" class="sl-btn sl-btn--primary" target="_blank" rel="noopener noreferrer">
+          Visit Website
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a routerLink="/services/web-development" class="sl-btn sl-btn--outline">
+          Explore More Work
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── The Suite ── -->
+  <section class="sl-suite">
+    <div class="sl-suite__inner">
+      <h2 class="sl-suite__title" scrollAnimate="fade-up">
+        <span class="sl-gradient-text">Three Apps, One Suite</span>
+      </h2>
+      <p class="sl-suite__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Lumina keeps your tasks in order. Ember keeps you focused. Fable keeps your story.
+      </p>
+
+      <div class="sl-suite__grid">
+
+        <!-- Ember -->
+        <article class="sl-app sl-app--ember" scrollAnimate="fade-up" [animDelay]="120">
+          <header class="sl-app__head">
+            <span class="sl-app__icon">
+              <img src="/Web%20Development/Selene/EmberIcon.png" alt="Ember app icon" />
+            </span>
+            <div>
+              <h3 class="sl-app__name">Ember</h3>
+              <span class="sl-app__role">Focus Timer</span>
+            </div>
+          </header>
+          <p class="sl-app__desc">A Pomodoro timer that actually feels warm. A pixel-art flame flickers through your focus session — stay in the zone, then breathe.</p>
+          <ul class="sl-app__list">
+            <li>Focus, short break &amp; long break modes</li>
+            <li>Living pixel-art flame that reacts to your session</li>
+            <li>Set your intention — &ldquo;What are you burning toward?&rdquo;</li>
+            <li>Works offline — installs as a desktop app</li>
+          </ul>
+          <span class="sl-app__status sl-app__status--live">Available now</span>
+        </article>
+
+        <!-- Lumina -->
+        <article class="sl-app sl-app--lumina" scrollAnimate="fade-up" [animDelay]="200">
+          <header class="sl-app__head">
+            <span class="sl-app__icon sl-app__icon--contain">
+              <img src="/Web%20Development/Selene/LuminaIcon.png" alt="Lumina app icon" />
+            </span>
+            <div>
+              <h3 class="sl-app__name">Lumina</h3>
+              <span class="sl-app__role">Task Tracker</span>
+            </div>
+          </header>
+          <p class="sl-app__desc">A task board that stays out of your way. Add tasks, move them across columns, check them off. No accounts, no subscriptions — it all lives on your device.</p>
+          <ul class="sl-app__list">
+            <li>Kanban board — To do, In progress, Done</li>
+            <li>Priority levels with colour coding</li>
+            <li>Archive, templates, and drag to reorder</li>
+            <li>Works offline — installs as a desktop app</li>
+          </ul>
+          <span class="sl-app__status sl-app__status--live">Available now</span>
+        </article>
+
+        <!-- Fable -->
+        <article class="sl-app sl-app--fable" scrollAnimate="fade-up" [animDelay]="280">
+          <header class="sl-app__head">
+            <span class="sl-app__icon">
+              <img src="/Web%20Development/Selene/FaberIcon.png" alt="Fable app icon" />
+            </span>
+            <div>
+              <h3 class="sl-app__name">Fable</h3>
+              <span class="sl-app__role">Journal &amp; Notes</span>
+            </div>
+          </header>
+          <p class="sl-app__desc">Your private grimoire. Write today's entry, capture fleeting ideas, collect what matters — all in one warm, unhurried space. No folders, no friction.</p>
+          <ul class="sl-app__list">
+            <li>Daily journal with dated entries &amp; a 7-day strip</li>
+            <li>Free-form notes with colour-coded tags</li>
+            <li>Streak counter — keep the habit alive</li>
+            <li>Yours alone — everything stays on your device</li>
+          </ul>
+          <span class="sl-app__status sl-app__status--soon">In the making</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Screenshots ── -->
+  <section class="sl-shots">
+    <div class="sl-shots__inner">
+
+      <h2 class="sl-shots__title" scrollAnimate="fade-up">
+        <span class="sl-gradient-text">A Closer Look</span>
+      </h2>
+      <p class="sl-shots__sub" scrollAnimate="fade-up" [animDelay]="80">
+        Selected screens from the suite — from the landing experience to each app in action.
+      </p>
+
+      <div class="sl-shots__grid">
+        <figure class="sl-shot sl-shot--wide" scrollAnimate="fade-up" [animDelay]="100"
+                (click)="openLightbox('/Web%20Development/Selene/Hero.png', 'Selene suite landing page')">
+          <img src="/Web%20Development/Selene/Hero.png" alt="Selene suite landing page" />
+          <figcaption>Suite landing</figcaption>
+        </figure>
+
+        <figure class="sl-shot" scrollAnimate="fade-up" [animDelay]="160"
+                (click)="openLightbox('/Web%20Development/Selene/Ember.png', 'Ember focus timer overview')">
+          <img src="/Web%20Development/Selene/Ember.png" alt="Ember focus timer overview" />
+          <figcaption>Ember — focus timer</figcaption>
+        </figure>
+
+        <figure class="sl-shot" scrollAnimate="fade-up" [animDelay]="220"
+                (click)="openLightbox('/Web%20Development/Selene/EmberInterface.png', 'Ember timer interface with pixel-art flame')">
+          <img src="/Web%20Development/Selene/EmberInterface.png" alt="Ember timer interface with pixel-art flame" />
+          <figcaption>Ember in session</figcaption>
+        </figure>
+
+        <figure class="sl-shot" scrollAnimate="fade-up" [animDelay]="280"
+                (click)="openLightbox('/Web%20Development/Selene/Lumina.png', 'Lumina task tracker overview')">
+          <img src="/Web%20Development/Selene/Lumina.png" alt="Lumina task tracker overview" />
+          <figcaption>Lumina — task tracker</figcaption>
+        </figure>
+
+        <figure class="sl-shot" scrollAnimate="fade-up" [animDelay]="340"
+                (click)="openLightbox('/Web%20Development/Selene/LuminaInterface.jpg', 'Lumina Kanban board interface')">
+          <img src="/Web%20Development/Selene/LuminaInterface.jpg" alt="Lumina Kanban board interface" />
+          <figcaption>Lumina Kanban board</figcaption>
+        </figure>
+
+        <figure class="sl-shot" scrollAnimate="fade-up" [animDelay]="400"
+                (click)="openLightbox('/Web%20Development/Selene/Fable.png', 'Fable journal and notes overview')">
+          <img src="/Web%20Development/Selene/Fable.png" alt="Fable journal and notes overview" />
+          <figcaption>Fable — journal</figcaption>
+        </figure>
+
+        <figure class="sl-shot sl-shot--wide" scrollAnimate="fade-up" [animDelay]="460"
+                (click)="openLightbox('/Web%20Development/Selene/footer.png', 'Three apps, one suite')">
+          <img src="/Web%20Development/Selene/footer.png" alt="Three apps, one suite" />
+          <figcaption>Three apps. One suite.</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <app-cta-banner />
+
+  <!-- ── Lightbox ── -->
+  @if (lightboxSrc(); as src) {
+    <div class="sl-lightbox" (click)="closeLightbox()" role="dialog" aria-modal="true" [attr.aria-label]="lightboxAlt()">
+      <button type="button" class="sl-lightbox__close" (click)="closeLightbox()" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <img class="sl-lightbox__img" [src]="src" [alt]="lightboxAlt()" (click)="$event.stopPropagation()" />
+    </div>
+  }
+
+</div>
