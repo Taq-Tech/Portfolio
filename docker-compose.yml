@@ -1,0 +1,14 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:latest
+    container_name: portfolio
+    restart: unless-stopped
+    # Bind to localhost only: the host's front proxy (nginx/Traefik/etc.)
+    # reverse-proxies the subdomain to this port. Nothing is exposed publicly
+    # by the container itself, so it can't clash with other sites' 80/443.
+    # Override the host port with:  HOST_PORT=8090 docker compose up -d
+    ports:
+      - "127.0.0.1:${HOST_PORT:-8082}:80"
